@@ -95,12 +95,57 @@ figure {
 }
 /* ----END-HERO----- */
 
-/* ---START-FOOTER--- */
+/* ---START-FOOTER-CSS-GRID--- */
 footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 90% 10%;
+  grid-template-areas: "contactSchool contactFafe"
+                       "copyright copyright";
   width: 100vw;
   height: 300px;
   background: gray;
 }
+.contactSchool{
+  grid-area: contactSchool;
+  border: solid red 2px;
+  display: flex;
+  flex-direction: column;
+  background: #4E5E6D;
+  padding: 0% 18%;
+}
+.contactFafe{
+  grid-area: contactFafe;
+  border: solid red 2px;
+  background: #4E5E6D;
+}
+.copyright{
+  grid-area: copyright;
+  border: solid red 2px;
+  background: #394653;
+}
+.title{
+  display: inherit;
+  font-size: 1.5em;
+  margin: 0% 1%
+}
+.title h2{
+  margin: 3% 0;
+}
+.location{
+  display: inherit;
+}
+.phone{
+  display: inherit;
+}
+.mail{
+  display: inherit;
+}
+.facebook{
+  display: inherit;
+}
+
+/* ---END-FOOTER-CSS-GRID--- */
 
 
 
