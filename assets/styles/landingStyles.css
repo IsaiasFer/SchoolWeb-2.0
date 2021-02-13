@@ -1,3 +1,74 @@
+/* ----START-HERO----- */
+
+.hero {
+  display: flex;
+  position: relative;
+}
+figure {
+  margin: 0;
+}
+.heroImageContainer {
+  width: 100%;
+  height: 599px;
+}
+.heroImageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+nav{
+  background-color: unset;
+}
+.list {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 150px;
+  color: red;
+  position: absolute;
+  width: 80%;
+}
+.list ul {
+  list-style: none;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+
+  padding: 0;
+}
+.list ul li a {
+  text-shadow: 2px 2px 6px #000000;
+  text-decoration: none;
+  color: white;
+}
+.plataformasButton {
+  background-color: #3297cb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+  text-decoration: none;
+  border: none;
+  border-radius: 22px;
+  padding: 11px 15px;
+}
+.plataformasButton a {
+  font-family: "Agency FB";
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  margin-left: 7px;
+}
+.hero h1 {
+  position: absolute;
+  margin-left: 150px;
+  margin-top: 115px;
+  font-size: 86px;
+  text-shadow: 0px 3px 6px #000000;
+}
+/* ----END-HERO----- */
 /* ---START-NOVEDADES--- */
 /* ---END-NOVEDADES-- */
 /* ---START-ABOUT--- */
