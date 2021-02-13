@@ -134,12 +134,15 @@ footer {
 }
 .location{
   display: inherit;
+  align-items: baseline;
 }
 .phone{
   display: inherit;
+  align-items: baseline;
 }
 .mail{
   display: inherit;
+  align-items: baseline;
 }
 .facebook{
   display: inherit;
