@@ -108,7 +108,7 @@ footer {
 }
 .contactSchool{
   grid-area: contactSchool;
-  border: solid red 2px;
+  /* border: solid red 2px; */
   display: flex;
   flex-direction: column;
   background: #4E5E6D;
@@ -116,12 +116,12 @@ footer {
 }
 .contactFafe{
   grid-area: contactFafe;
-  border: solid red 2px;
+  /* border: solid red 2px; */
   background: #4E5E6D;
 }
 .copyright{
   grid-area: copyright;
-  border: solid red 2px;
+  /* border: solid red 2px; */
   background: #394653;
 }
 /* ---END-FOOTER-CSS-GRID--- */
@@ -151,13 +151,21 @@ footer {
 }
  /* -----END-SECTION-CONTACT-SCHOOL----- */
 .contactFafe{
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
+  display: grid;
+  grid-template-rows: 70% 30%;
+  grid-template-columns: 1fr;
+  grid-template-areas: "logotypeFafe"
+                       "socialNetworks";
+  justify-items: center;
 }
 .logotypeFafe{
-  height: 42%;
+  grid-area: logotypeFafe;
+  height: 70%;
   position: relative;
+  margin: 8% auto 0%;
 }
 .titleFafe h1{
   font-family: Rockwell;
@@ -166,6 +174,22 @@ footer {
   margin: 0;
   position: absolute; 
   bottom: 0%;
+}
+.socialNetworks{
+  grid-area: socialNetworks;
+  width: 26%;
+}
+.facebookFafe{
+  margin: auto 3%;
+}
+.twitter{
+  margin: auto 3%;
+}
+.instagram{
+  margin: auto 3%;
+}
+.github{
+  margin: auto 3%;
 }
 /* -----START-SECTION-CONTACT-FAFE----- */
 
