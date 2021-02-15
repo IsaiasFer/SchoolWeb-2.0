@@ -102,9 +102,10 @@ footer {
   grid-template-rows: 90% 10%;
   grid-template-areas: "contactSchool contactFafe"
   "copyright copyright";
-  width: 100vw;
+  /* width: 100vw; */
   height: 300px;
   background: gray;
+  font-family: Roboto;
 }
 .contactSchool{
   grid-area: contactSchool;
@@ -128,7 +129,8 @@ footer {
 /* -----START-SECTION-CONTACT-SCHOOL----- */
 .titleContactSchool{
   display: inherit;
-  font-size: 1.5em;
+  font-size: 1.7em;
+  font-family: "Agency FB", Roboto;
   margin: 0% 1%
 }
 .titleContactSchool h2{
@@ -151,9 +153,6 @@ footer {
 }
  /* -----END-SECTION-CONTACT-SCHOOL----- */
 .contactFafe{
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
   display: grid;
   grid-template-rows: 70% 30%;
   grid-template-columns: 1fr;
@@ -177,7 +176,9 @@ footer {
 }
 .socialNetworks{
   grid-area: socialNetworks;
-  width: 26%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 .facebookFafe{
   margin: auto 3%;
@@ -190,6 +191,11 @@ footer {
 }
 .github{
   margin: auto 3%;
+}
+.copyright{
+  display: inherit;
+  justify-content: center;
+  align-content: center;
 }
 /* -----START-SECTION-CONTACT-FAFE----- */
 
