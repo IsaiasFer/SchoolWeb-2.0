@@ -1,7 +1,34 @@
-.authorities{
-    color:black
+.pageTitle{
+    color:#16162D;
+    font-size: 48px;
+    margin-left: 95px;
 }
-.prueba{
-    height: 2000px;
-    background: blanchedalmond;
+h3{
+    font-size: 32px;
+    margin: 0;
+}
+h4{
+    margin:0;
+    font-size: 24px;
+}
+.authorities{
+    color: #16162D;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: 95px;
+}
+.authorities div{
+    margin-right: 124px;
+    margin-bottom:48px;
+}
+.authorities div figure{
+    margin: 0;
+    height: 184px;
+    width: 184px;
+}
+.authorities div figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
