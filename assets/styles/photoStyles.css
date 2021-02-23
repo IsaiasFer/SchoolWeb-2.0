@@ -1,0 +1,25 @@
+.photos {
+  column-count: 4;
+  column-gap: 10px;
+  padding: 0 90px 20px;
+}
+.photos figure {
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  margin-bottom: 10px;
+  break-inside: avoid;
+  box-shadow: 2px 2px 6px #000;
+}
+.photos figure img {
+  grid-row: 1 / -1;
+  grid-column: 1;
+  max-width: 100%;
+  display: block;
+  background-color: silver;
+}
+.pageTitle {
+  color: #16162d;
+  font-size: 48px;
+  margin-left: 95px;
+}
