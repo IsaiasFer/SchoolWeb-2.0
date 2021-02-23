@@ -1,6 +1,6 @@
-* {
-  /* border: RED 2px solid; */
-}
+/* * {
+  border: RED 2px solid;
+} */
 body {
   font-family: "Agency FB";
   margin: 0;
@@ -50,22 +50,25 @@ figure {
   justify-content: space-between;
   margin-left: 150px;
   color: red;
-  position: absolute;
   width: 80%;
 }
 .list ul {
+  margin: 0;
   list-style: none;
   width: 60%;
   display: flex;
   justify-content: space-between;
   font-size: 30px;
-
   padding: 0;
 }
 .list ul li a {
   text-shadow: 2px 2px 6px #000000;
   text-decoration: none;
   color: white;
+}
+.navContainer {
+  width: 100%;
+  background-color: #16162d;
 }
 .plataformasButton {
   background-color: #3297cb;
@@ -100,109 +103,105 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 90% 10%;
-  grid-template-areas: "contactSchool contactFafe"
-  "copyright copyright";
+  grid-template-areas:
+    "contactSchool contactFafe"
+    "copyright copyright";
   /* width: 100vw; */
   height: 300px;
   background: gray;
   font-family: Roboto;
 }
-.contactSchool{
+.contactSchool {
   grid-area: contactSchool;
   /* border: solid red 2px; */
   display: flex;
   flex-direction: column;
-  background: #4E5E6D;
+  background: #4e5e6d;
   padding: 0% 18%;
 }
-.contactFafe{
+.contactFafe {
   grid-area: contactFafe;
   /* border: solid red 2px; */
-  background: #4E5E6D;
+  background: #4e5e6d;
 }
-.copyright{
+.copyright {
   grid-area: copyright;
   /* border: solid red 2px; */
   background: #394653;
 }
 /* ---END-FOOTER-CSS-GRID--- */
 /* -----START-SECTION-CONTACT-SCHOOL----- */
-.titleContactSchool{
+.titleContactSchool {
   display: inherit;
   font-size: 1.7em;
   font-family: "Agency FB", Roboto;
-  margin: 0% 1%
+  margin: 0% 1%;
 }
-.titleContactSchool h2{
+.titleContactSchool h2 {
   margin: 3% 0;
 }
-.location{
+.location {
   display: inherit;
   align-items: baseline;
 }
-.phone{
+.phone {
   display: inherit;
   align-items: baseline;
 }
-.mail{
+.mail {
   display: inherit;
   align-items: baseline;
 }
-.facebook{
+.facebook {
   display: inherit;
 }
- /* -----END-SECTION-CONTACT-SCHOOL----- */
-.contactFafe{
+/* -----END-SECTION-CONTACT-SCHOOL----- */
+.contactFafe {
   display: grid;
   grid-template-rows: 70% 30%;
   grid-template-columns: 1fr;
-  grid-template-areas: "logotypeFafe"
-                       "socialNetworks";
+  grid-template-areas:
+    "logotypeFafe"
+    "socialNetworks";
   justify-items: center;
 }
-.logotypeFafe{
+.logotypeFafe {
   grid-area: logotypeFafe;
   height: 70%;
   position: relative;
   margin: 8% auto 0%;
 }
-.titleFafe h1{
+.titleFafe h1 {
   font-family: Rockwell;
   font-size: 2.4em;
   font-weight: bold;
   margin: 0;
-  position: absolute; 
+  position: absolute;
   bottom: 0%;
 }
-.socialNetworks{
+.socialNetworks {
   grid-area: socialNetworks;
   display: flex;
   justify-content: center;
   width: 100%;
 }
-.facebookFafe{
+.facebookFafe {
   margin: auto 3%;
 }
-.twitter{
+.twitter {
   margin: auto 3%;
 }
-.instagram{
+.instagram {
   margin: auto 3%;
 }
-.github{
+.github {
   margin: auto 3%;
 }
-.copyright{
+.copyright {
   display: inherit;
   justify-content: center;
   align-content: center;
 }
 /* -----START-SECTION-CONTACT-FAFE----- */
-
-
-
-
-
-
 
 /* -------------END-FOOTER--------------- */
