@@ -1,0 +1,17 @@
+/* *{
+    background: coral;
+} */
+body{
+    background: linear-gradient(135deg, rgba(50,151,203,1) 0%, rgba(49,49,100,1) 100%);
+}
+.mapToSchool {
+    display: grid;
+    min-height: calc(100vh - 125px - 300px);
+    grid-template: 80vh / 1fr 50% 1fr ;
+    grid-template-areas: ". mapContainer .";
+}
+.mapContainer {
+    grid-area: mapContainer;
+    /* border: solid red 2px; */
+    width: 100%;
+}
