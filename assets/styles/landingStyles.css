@@ -27,16 +27,17 @@
 
 /* ----------START-NEWS----------*/
 .news {
-  display: inherit;
+  /* display: inherit; */
+  display: inline-block;
   margin: 0;
   /* width: 100vw; */
-  height: 100vh;
+  /* height: 100vh; */
+  height: 1500px;
   background: linear-gradient(
     135deg,
     rgba(50, 151, 203, 1) 0%,
     rgba(49, 49, 100, 1) 100%
   );
-  overflow:auto;
 }
 .titleNews h1 {
   font-size: 3em;
@@ -48,11 +49,12 @@
   display: grid;
   /* border:solid 2px rgb(218, 17, 17); */
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 50% 50%;
+  grid-template-rows: 25% 25% 25% 25%;
+  /* grid-template-rows: 50% 50%; */
   justify-items: center;
   grid-column-gap: 6%;
   margin: auto 9%;
-  height: 80%;
+  height: 90%;
 }
 .new {
   width: 100%;
@@ -64,11 +66,38 @@
 .newImageContainer {
   width: 100%;
   height: 65%;
+  cursor: pointer;
+  position: relative;
 }
 .newImagen {
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+.layerNew {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(60, 60, 163,0.6);
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+.layerNew h2 {
+  margin-top: 5%;
+  margin-bottom: 35%;
+  transition: all 500ms ease-out;
+}
+.newImageContainer:hover > .layerNew {
+  opacity: 1;
+  visibility: visible;
+}
+
+.newImageContainer:hover > .layerNew h2 {
+  margin-top: 20%;
+  margin-bottom: 5%;
 }
 /* ----------START-CSS-GRID-NEWS---------- */
 /* ----------END-NEWS---------- */

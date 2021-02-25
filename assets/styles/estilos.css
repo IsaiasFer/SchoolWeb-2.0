@@ -98,6 +98,8 @@ figure {
 }
 /* ----END-HERO----- */
 
+
+/* --------------START-FOOTER---------------- */
 /* -------------START-FOOTER-CSS-GRID--------------- */
 footer {
   display: grid;
@@ -107,7 +109,8 @@ footer {
     "contactSchool contactFafe"
     "copyright copyright";
   /* width: 100vw; */
-  height: 300px;
+  /* height: 300px; */
+  height: auto;
   background: gray;
   font-family: Roboto;
 }
@@ -130,6 +133,7 @@ footer {
   background: #394653;
 }
 /* ---END-FOOTER-CSS-GRID--- */
+
 /* -----START-SECTION-CONTACT-SCHOOL----- */
 .titleContactSchool {
   display: inherit;
@@ -154,8 +158,11 @@ footer {
 }
 .facebook {
   display: inherit;
+  margin: 0 9%;
 }
 /* -----END-SECTION-CONTACT-SCHOOL----- */
+
+
 .contactFafe {
   display: grid;
   grid-template-rows: 70% 30%;
@@ -171,13 +178,17 @@ footer {
   position: relative;
   margin: 8% auto 0%;
 }
-.titleFafe h1 {
+#FAFE {
   font-family: Rockwell;
   font-size: 2.4em;
   font-weight: bold;
   margin: 0;
   position: absolute;
   bottom: 0%;
+}
+.buttonContactFafe a button {
+  background-color: darkblue;
+  color: white;
 }
 .socialNetworks {
   grid-area: socialNetworks;
@@ -203,5 +214,4 @@ footer {
   align-content: center;
 }
 /* -----START-SECTION-CONTACT-FAFE----- */
-
 /* -------------END-FOOTER--------------- */
