@@ -158,7 +158,7 @@ footer {
 }
 .facebook {
   display: inherit;
-  margin: 0 9%;
+  margin: 0 11%;
 }
 /* -----END-SECTION-CONTACT-SCHOOL----- */
 
@@ -187,8 +187,15 @@ footer {
   bottom: 0%;
 }
 .buttonContactFafe a button {
-  background-color: darkblue;
+  background-color: #16162d;
   color: white;
+  outline: none;
+  border: none;
+  font-size: 1em;
+}
+.buttonContactFafe a button:hover {
+  background: #3297CB;
+  /* background-color: ; */
 }
 .socialNetworks {
   grid-area: socialNetworks;
@@ -212,6 +219,9 @@ footer {
   display: inherit;
   justify-content: center;
   align-content: center;
+}
+svg {
+  margin: 0 3% 0 0;
 }
 /* -----START-SECTION-CONTACT-FAFE----- */
 /* -------------END-FOOTER--------------- */
