@@ -1,17 +1,13 @@
-/* ----START-HERO----- */
+/* -----------START-HERO----- */
 .hero {
   display: flex;
   position: relative;
 }
-.heroImageContainer {
-  width: 100%;
-  height: 599px;
+.titleNews h1{
+  font-size: 3em;
+  margin: 2% 9% 0%;
 }
-.heroImageContainer img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+
 .navContainer {
   background-color: unset;
 }
@@ -21,58 +17,22 @@
 .list ul {
   margin: 30px 0;
 }
-.hero h1 {
-  position: absolute;
-  margin-left: 150px;
-  margin-top: 115px;
-  font-size: 86px;
-  text-shadow: 0px 3px 6px #000000;
-}
-/* ----END-HERO----- */
-/* ---START-NOVEDADES--- */
-/* ---END-NOVEDADES-- */
-/* ---START-ABOUT--- */
-.about {
-  position: relative;
-  display: flex;
-}
-.aboutImageContainer {
-  width: 100%;
-  height: 100vh;
-}
-.aboutImageContainer img {
+.newImagen{
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
-.abouTextContainer {
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-.abouTextContainer h1 {
-  font-size: 73px;
-  color: #314d81;
-  margin: 64px auto 0;
-}
-.abouTextContainer h2 {
-  text-align: center;
-  font-family: roboto;
-  font-size: 40px;
-  text-shadow: 0px 3px 6px #000;
-  margin: 0px 20% 40px;
-}
 
-/* ---END-ABOUT--- */
-/* ---START-NEWS--- */
+/* ----------END-HERO------------ */
+
+/* ----------START-NEWS----------*/
 .news {
+  /* display: inherit; */
   display: inline-block;
   margin: 0;
   /* width: 100vw; */
-  height: 100vh;
+  /* height: 100vh; */
+  height: 1500px;
   background: linear-gradient(
     135deg,
     rgba(50, 151, 203, 1) 0%,
@@ -89,12 +49,12 @@
   display: grid;
   /* border:solid 2px rgb(218, 17, 17); */
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 50% 50%;
+  grid-template-rows: 25% 25% 25% 25%;
+  /* grid-template-rows: 50% 50%; */
   justify-items: center;
   grid-column-gap: 6%;
   margin: auto 9%;
-  /* width: 1100px; */
-  height: 80%;
+  height: 90%;
 }
 .new {
   width: 100%;
@@ -106,16 +66,43 @@
 .newImageContainer {
   width: 100%;
   height: 65%;
+  cursor: pointer;
+  position: relative;
 }
 .newImagen {
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
-/* ----------START-CSS-GRID-NEWS---------- */
-/* ---END-NEWS-- */
+.layerNew {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(60, 60, 163,0.6);
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+.layerNew h2 {
+  margin-top: 5%;
+  margin-bottom: 35%;
+  transition: all 500ms ease-out;
+}
+.newImageContainer:hover > .layerNew {
+  opacity: 1;
+  visibility: visible;
+}
 
-/* ---START-ABOUT--- */
+.newImageContainer:hover > .layerNew h2 {
+  margin-top: 20%;
+  margin-bottom: 5%;
+}
+/* ----------START-CSS-GRID-NEWS---------- */
+/* ----------END-NEWS---------- */
+
+/* ----------START-ABOUT---------- */
 .about {
   position: relative;
   display: flex;
@@ -149,4 +136,4 @@
   text-shadow: 0px 3px 6px #000;
   margin: 0px 20% 40px;
 }
-/* ---END-ABOUT--- */
+/* ----------END-ABOUT---------- */
