@@ -4,7 +4,7 @@
   margin-left: 95px;
 }
 h3 {
-  font-size: 32px;
+  font-size: 30px;
   margin: 0;
 }
 h4 {
@@ -13,14 +13,18 @@ h4 {
 }
 .authorities {
   color: #16162d;
-  display: flex;
+  display: grid;
   flex-wrap: wrap;
   text-align: center;
-  margin-left: 95px;
+  margin: 0 5em 3em;
+  grid-template-columns: repeat(4,1fr);
+  column-gap: normal;
+  row-gap: 3em;
 }
 .authorities div {
-  margin-right: 124px;
-  margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .authorities div figure {
   margin: 0;
