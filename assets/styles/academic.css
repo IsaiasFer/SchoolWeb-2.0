@@ -79,13 +79,30 @@
   /* transform: translateX(-100%); */
   /* text-align: center; */
 }
-.container {
+.titleContent {
   width: 100%;
   height: 100%;
   /* background: crimson; */
   display: none;
   /* display: flex; */
-
+}
+.studyPlanContent {
+  width: 100%;
+  height: 100%;
+  background: crimson;
+  display: none;
+}
+.studyProgramContent {
+  width: 100%;
+  height: 100%;
+  background: burlywood;
+  display: none;
+}
+.infoTeachersContent {
+  width: 100%;
+  height: 100%;
+  background: chartreuse;
+  display: none;
 }
 /* iframe {
   width: 100%;
