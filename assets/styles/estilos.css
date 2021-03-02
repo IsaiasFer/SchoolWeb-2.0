@@ -65,6 +65,11 @@ figure {
   text-shadow: 2px 2px 6px #000000;
   text-decoration: none;
   color: white;
+  font-size: 1em;
+  transition: .3s;
+}
+.list ul li a:hover{
+  font-size:1.1em
 }
 .navContainer {
   width: 100%;
@@ -80,6 +85,20 @@ figure {
   border: none;
   border-radius: 22px;
   padding: 11px 15px;
+  z-index: 2;
+  width: 17em;
+  height: 4em;
+  cursor:pointer;
+  outline: none;
+  transition:.3s;
+}
+.plataformasButton:hover{
+  width: 18em;
+  height: 5em;
+}
+.plataformasButton:active{
+  width: 17em;
+  height:4em;
 }
 .plataformasButton a {
   font-family: "Agency FB";
@@ -215,3 +234,53 @@ footer {
 }
 /* -----START-SECTION-CONTACT-FAFE----- */
 /* -------------END-FOOTER--------------- */
+
+/* START-PLATFORMS */
+.menu{
+  display:none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    135deg,
+    rgba(50, 151, 203, 1) 0%,
+    rgba(49, 49, 100, 1) 100%
+  );
+  z-index: 1;
+  transition: .3s;
+}
+.menu.isActive{
+  display: block;
+  transition: .3s;
+}
+.menu nav{
+  display: flex;
+  height: inherit;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.platforms{
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+}
+.platforms li{
+  list-style: none;
+}
+.platforms li a img{
+  height: 5em;
+  width: 10em;
+  object-fit: contain;
+  background: rgba(255, 255, 255, .4);
+  border-radius: 15px;
+  transition: .3s;
+}
+.platforms li a img:hover{
+  height: 6em;
+  width: 11em;
+}
+.menu nav span{
+  font-size: 2em;
+}
+/* END-PLATFORMS */
