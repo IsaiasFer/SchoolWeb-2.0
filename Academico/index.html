@@ -15,6 +15,16 @@
   </head>
   <body>
     <!-- ----------START-HEADER---------- -->
+    <div class="menu">
+      <nav>
+        <span>ELige tu plataforma de estudio!</span>
+        <ul class="platforms">
+          <li><a href=""><img src="https://i.imgur.com/CqsFbpD.png" alt=""></a></li>
+          <li><a href=""><img src="https://i.imgur.com/OGVelf2.pngg" alt=""></a></li>
+          <li><a href=""><img src="https://i.imgur.com/L0n8z2f.png" alt=""></a></li>
+        </ul>
+      </nav>
+    </div>
     <header>
         <figure class="logotypeContainer">
           <img
@@ -31,11 +41,11 @@
       <nav class="list">
         <ul>
           <li><a href="../index.html">Inicio</a></li>
-          <li><a href="">Institucional</a></li>
-          <li><a href="./Academico/">Academico</a></li>
-          <li><a href="./Fotos/">Fotos</a></li>
+          <li><a href="../Institucional/index.html">Institucional</a></li>
+          <li><a href="">Academico</a></li>
+          <li><a href="../Fotos/index.html">Fotos</a></li>
           <li><a href="../Location/index.html">Ubicación</a></li>
-          <li><a href="./Contacto/">Contacto</a></li>
+          <li><a href="../Contacto/">Contacto</a></li>
         </ul>
         <button class="plataformasButton">
           <svg
@@ -52,7 +62,7 @@
               fill="#fff"
             />
           </svg>
-          <a href="">PLATAFORMAS</a>
+          <a >PLATAFORMAS</a>
         </button>
       </nav>
     </section>
@@ -60,33 +70,35 @@
 
     <!-- ----------START-ACADEMIC------------ -->
     <section class="academic">
-      <button type="button" id="openTitle" class="titleAcademic">Titulo</button>
+      <button type="button" id="openTitle" onclick="showContentButtons(0)" class="titleAcademic">Titulo</button>
 
-      <button type="button" id="openStudyPlan" class="studyPlan">Plan de estudio</button>
+      <button type="button" id="openStudyPlan" onclick="showContentButtons(1)" class="studyPlan">Plan de estudio</button>
 
-      <button type="button" id="openStudyProgram" class="studyProgram"> Programa de estudio</button>
+      <button type="button" id="openStudyProgram" onclick="showContentButtons(2)" class="studyProgram"> Programa de estudio</button>
 
-      <button type="button" id="openTeachersInfo" class="infoTeachers">Info perofesores</button>
-
-      <!-- <button type="button" class="titleAcademic"><h1>Titulo</h1></button>
-      <button type="button" class="studyPlan"><h1>Plan de estudio</h1></button>
-      <button type="button" class="studyProgram"> <h1>Programa de estudio</h1></button>
-      <button type="button" class="infoTeachers"><h1>Info perofesores</h1></button>   -->
-
+      <button type="button" id="openTeachersInfo" onclick="showContentButtons(3)" class="infoTeachers">Info perofesores</button>
+      
       <div class="column2Container" >
-        <!-- <div class="container" id="container"></div>   -->
+        
         <iframe class="titleContent" id="titleContent" src="https://cuentocorto.es/wp-content/uploads/2014/06/Relato-er%C3%B3tico-Corto-PDF.pdf" ></iframe>
 
-        <iframe class="studyPlanContent" id="studyPlanContent" src="http://eet3141.ddns.net/Web3141/Academico/Plan%20de%20Estudio.aspx"></iframe>
+        <iframe class="studyPlanContent" id="studyPlanContent" src="https://cuentocorto.es/wp-content/uploads/2014/06/Relato-er%C3%B3tico-Corto-PDF.pdf"></iframe>
         
         <div class="studyProgramContent" id="studyProgramContent">
           <div class="optionsStudyProgramContent">
-            <button class="firstYearCB" id="openFirstYearContentCB">1ºCB</button>
-            <button class="secondYearCB" id="openSecondYearContentCB">2ºCB</button>
-            <button class="primerAñoCS" id="openFirstYearContentCS">1ºCS</button>
-            <button class="secondYearCS" id="openSecondYearContentCS">2ºCS</button>
-            <button class="thirdYearCS" id="openThirdYearContentCS">3ºCS</button>  
-            <button class="fourthYearoCS" id="openFourthYearContentCS">4ºCS</button>  
+            
+            <button type="button" class="firstYearCB" id="openFirstYearContentCB" onclick="showContentStudyProgram(0)">1ºCB</button>
+
+            <button type="button" class="secondYearCB" id="openSecondYearContentCB" onclick="showContentStudyProgram(1)">2ºCB</button>
+
+            <button type="button" class="primerAñoCS" id="openFirstYearContentCS" onclick="showContentStudyProgram(2)">1ºCS</button>
+
+            <button type="button" class="secondYearCS" id="openSecondYearContentCS" onclick="showContentStudyProgram(3)">2ºCS</button>
+
+            <button type="button" class="thirdYearCS" id="openThirdYearContentCS" onclick="showContentStudyProgram(4)">3ºCS</button>  
+
+            <button type="button" class="fourthYearoCS" id="openFourthYearContentCS" 
+            onclick="showContentStudyProgram(5)">4ºCS</button>  
           </div>
 
           <div class="firstYearContentCB" id="firstYearContentCB">
@@ -133,27 +145,36 @@
        
         
         <div class="infoTeachersContent" id="infoTeachersContent">
-          
-            <h1>Jornada 28-02-2020 Descargas: </h1>
+          <div class="optionInfoTeachersContent">
+            <button type="button" class="infoTeachers1" id="opentInfoTeachersContent1" onclick="showContentInfoTeachers(0)">1</button>
 
+            <button type="button" class="infoTeachers2" id="opentInfoTeachersContent2" onclick="showContentInfoTeachers(1)">2</button>
+          </div>
+
+          <div class="infoTeachersContent1" id="infoTeachersContent1">
+            <h1>Jornada 28-02-2020 Descargas: </h1>
+            
             <p>&nbsp;&nbsp;&nbsp;&nbsp;»&nbsp;&nbsp;<a href="http://eet3141.ddns.net/Web3141/Prensa/Profesores/Jornadas/2020/28022020/PRESENTACION%20JORNADA--ULTIMO.pptx">(.pptx) Presentación Jornada por Vicedirectores (Normativas, Calendario)</a></p>
             <p>&nbsp;&nbsp;&nbsp;&nbsp;»&nbsp;&nbsp;<a href="http://eet3141.ddns.net/Web3141/Prensa/Profesores/Jornadas/2020/28022020/IPA-3141.pdf">(.pdf) IPA-3141</a></p>
             <p>&nbsp;&nbsp;&nbsp;&nbsp;»&nbsp;&nbsp;<a href="http://eet3141.ddns.net/Web3141/Prensa/Profesores/Jornadas/2020/28022020/Jornada%20Institucional%2028-02.docx">(.docx) Jornada Institucional 28-02</a></p>
             <p>&nbsp;&nbsp;&nbsp;&nbsp;»&nbsp;&nbsp;<a href="http://eet3141.ddns.net/Web3141/Prensa/Profesores/Jornadas/2020/28022020/MOA-3141.pdf">(.pdf) MOA-3141</a></p>
             <p>&nbsp;&nbsp;&nbsp;&nbsp;»&nbsp;&nbsp;<a href="http://eet3141.ddns.net/Web3141/Prensa/Profesores/Jornadas/2020/28022020/Modelo%20de%20Planificacion.docx">(.docx) Modelo de Planificación</a></p>
             <p>&nbsp;&nbsp;&nbsp;&nbsp;»&nbsp;&nbsp;<a href="http://eet3141.ddns.net/Web3141/Prensa/Profesores/Jornadas/2020/28022020/Modelo%20de%20Programa%20EET%203141.docx">(.docx) Modelo de Programa EET 3141</a></p>
-            <!-- <h5>Jornada 28-02-2020</a></h5> -->
-          
-             <p>Descargar: <a href="http://eet3141.ddns.net/Web3141/Prensa/Profesores/Cartilla%20para%20Ingresantes%202019.pdf">Cartilla para Ingresantes 2019</a></p>
-             <p>Descargar: <a href="http://eet3141.ddns.net/Web3141/Prensa/Profesores/Graficos%20Alumnos%20Aprobados%202019.pptx">Graficos Alumnos Aprobados 1° Trimestre  2019.pptx</a></p>
-             <p>Descargar: <a href="http://eet3141.ddns.net/Web3141/Prensa/Profesores/Manual-Info-Basica.pdf">Manual Curso Informatica</a></p>
-             <p>Descargar: <a href="http://eet3141.ddns.net/Web3141/Prensa/Profesores/Cartilla_Ingresantes2019.doc">Cartilla Ingresantes 2019 (.doc se lee con Word)</a></p>
-            
+          </div> 
+
+          <div class="infoTeachersContent2" id="infoTeachersContent2">
+
+            <p>Descargar: <a href="http://eet3141.ddns.net/Web3141/Prensa/Profesores/Cartilla%20para%20Ingresantes%202019.pdf">Cartilla para Ingresantes 2019</a></p>
+            <p>Descargar: <a href="http://eet3141.ddns.net/Web3141/Prensa/Profesores/Graficos%20Alumnos%20Aprobados%202019.pptx">Graficos Alumnos Aprobados 1° Trimestre  2019.pptx</a></p>
+            <p>Descargar: <a href="http://eet3141.ddns.net/Web3141/Prensa/Profesores/Manual-Info-Basica.pdf">Manual Curso Informatica</a></p>
+            <p>Descargar: <a href="http://eet3141.ddns.net/Web3141/Prensa/Profesores/Cartilla_Ingresantes2019.doc">Cartilla Ingresantes 2019 (.doc se lee con Word)</a></p>
+              
             <p>Descargar: <a href="http://eet3141.ddns.net/Web3141/Prensa/Profesores/Prevencion%20y%20Erradicacion%20de%20la%20Violencia%20de%20Genero.pdf">Prevencion y Erradicacion de la Violencia de Genero.pdf</a></p>
-                <p>Descargar: <a href="http://eet3141.ddns.net/Web3141/Prensa/Profesores/PLAN%20DE%20MEJORA%20PEDAGOGICO%20TECNICO%20QUIMICO%2007-08-17.pdf">PLAN DE MEJORA PEDAGOGICO 07-08-17.pdf</a></p>
-              <p>Descargar: <a href="http://eet3141.ddns.net/Web3141/Prensa/Profesores/Guia_para_Ingresantes_%202018.pdf">Guia para Ingresantes 2018</a></p>
-              <p>Descargar: <a href="http://eet3141.ddns.net/Web3141/Prensa/Profesores/Jornada%20020318%20al%20050318.rar">Material Jornada 02-03-2018 actualizado al 05-03-2018</a></p>
-            
+             <p>Descargar: <a href="http://eet3141.ddns.net/Web3141/Prensa/Profesores/PLAN%20DE%20MEJORA%20PEDAGOGICO%20TECNICO%20QUIMICO%2007-08-17.pdf">PLAN DE MEJORA PEDAGOGICO 07-08-17.pdf</a></p>
+            <p>Descargar: <a href="http://eet3141.ddns.net/Web3141/Prensa/Profesores/Guia_para_Ingresantes_%202018.pdf">Guia para Ingresantes 2018</a></p>
+            <p>Descargar: <a href="http://eet3141.ddns.net/Web3141/Prensa/Profesores/Jornada%20020318%20al%20050318.rar">Material Jornada 02-03-2018 actualizado al 05-03-2018</a></p>
+          </div> 
+              
         </div>
 
       </div>
@@ -313,5 +334,6 @@
     </footer>
     <script type="text/javascript" src="../assets/scripts/interactivity.js"></script>
       <!-- ----------END-FOOTER---------- -->
+      <script src="../assets/scripts/script.js"></script>
     </body>
   </html>
