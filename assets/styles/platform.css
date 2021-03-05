@@ -9,6 +9,9 @@
 .plataformasButton:hover{
     width: 11em;
 }
+#haciaDivisiones,#haciaCursos{
+    display:none;
+}
 #curses{
     display:flex;
     flex-direction: column;
