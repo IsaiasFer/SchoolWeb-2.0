@@ -30,7 +30,7 @@
     text-decoration: none;
     cursor: pointer;
 }
-.cursesgrill div h3, #divisiones div a h3{
+.cursesgrill div h3, #divisiones div div h3{
     margin:0;
     color: white;
 }
@@ -64,9 +64,29 @@
     cursor: pointer;
     transition:.3s;
 }
-#divisiones div a{
+#divisiones div div{
     display:flex;
     flex-direction: column;
     align-items: center;
     text-decoration: none;
+}
+.asign{
+    display:none;
+}
+.asign ul{
+    padding: 0;
+    margin: 0 0 0 100px;
+}
+.asign ul li{
+    list-style: none;
+}
+.asign ul li a{
+    font-size:2em;
+    text-decoration: none;
+    color:white;
+    transition:.3s;
+}
+.asign ul li a:hover{
+    color:#16162d;
+    font-size: 2.2em;
 }
