@@ -1,11 +1,21 @@
-const cursos = document.getElementById('curses')
+// -----------SECTIONS-------------
+let cursos = document.getElementById('curses') 
+let divisions = document.getElementById('divisions')
+let asignsContainer = document.getElementById('asignsContainer')
+
+// let cursos = document.querySelector('.curses') 
+// let divisions = document.querySelector('.divisions')
+// let asignsContainer = document.querySelector('.asignaturas')
+
+
+// -----------SECTIONS-------------
+
 const division1 = document.getElementById('division1')
 const division2 = document.getElementById('division2')
 const division3 = document.getElementById('division3')
 const division4 = document.getElementById('division4')
 const division5 = document.getElementById('division5')
 const division6 = document.getElementById('division6')
-const divisiones = document.getElementById('divisiones')
 const asign11b = document.getElementById('asign11b')
 const asign12b = document.getElementById('asign12b')
 const asign13b = document.getElementById('asign13b')
@@ -28,15 +38,101 @@ const asign32 = document.getElementById('asign32')
 const asign33 = document.getElementById('asign33')
 const asign41 = document.getElementById('asign41')
 const asign42 = document.getElementById('asign42')
-const asignsContainer = document.getElementById('asignsContainer')
 
-var contents = [cursos,division1,division2,division3,division4,division5,division6,asignsContainer,asign11b,asign12b,asign13b,asign14b,asign15b,asign21b,asign22b,asign23b,asign24b,asign11,asign12,asign13,asign14,asign21,asign22,asign23,asign24,asign31,asign32,asign33,asign41,asign42]
+let VOLVER = document.querySelector(".plataformasButton") 
+// var contents = [cursos,division1,division2,division3,division4,division5,division6,asignsContainer,asign11b,asign12b,asign13b,asign14b,asign15b,asign21b,asign22b,asign23b,asign24b,asign11,asign12,asign13,asign14,asign21,asign22,asign23,asign24,asign31,asign32,asign33,asign41,asign42]
 
-function showContent(selectorNumber){
-    for (let i = 0; i < contents.length; i++) {
-        contents[i].style.display="none";
+// function showContent(selectorNumber){
+//     for (let i = 0; i < contents.length; i++) {
+//         contents[i].style.display="none";
+//     }
+//     contents[selectorNumber].style.display="flex";
+//     divisiones.style.display="flex"
+//     asignsContainer.style.display="block"
+// }
+
+// ---------DIVISIONS----------
+
+var divisionsArray = [divisions, division1, division2, division3, division4, division5, division6]
+
+function showContentDivisions (numberDivision){
+    for(let i = 0; i < divisionsArray.length; i++){
+        divisionsArray[i].style.display="none"
     }
-    contents[selectorNumber].style.display="flex";
-    divisiones.style.display="flex"
-    asignsContainer.style.display="block"
+    divisionsArray[numberDivision].style.display="flex" 
+    divisions.style.display="flex"
+    cursos.style.display="none"
+    VOLVER.classList.add("inDivisions")
 }
+// ---------DIVISIONS----------
+
+// ----------------ASIGNS----------------------
+
+var asignArray = [divisions, asign11b, asign12b, asign13b, asign14b, asign15b, asign21b, asign22b, asign23b, asign24b, asign11, asign12, asign13, asign14, asign21, asign22, asign23, asign24, asign31, asign32, asign33, asign41, asign42]
+
+function showContentAsign (numberAsign){
+    for(let i = 0; i < asignArray.length; i++){
+        asignArray[i].style.display="none"
+    }
+    asignArray[numberAsign].style.display="block"
+    asignsContainer.style.display="block"
+    divisions.style.display="none"
+    VOLVER.classList.add("inAsign")
+}
+// ----------------ASIGNS----------------------
+
+// ----------------GO-BACK-BUTTON--------------
+
+function goBack(){
+    switch (VOLVER) {
+        case VOLVER.classList.contains("plataformasButton"):
+            alert("Elpepe")
+            history.go(-1)
+            break;
+            case VOLVER.classList.contains("inDivision"):
+                divisions.style.display="none"
+                cursos.style.display="flex"
+                VOLVER.classList.remove("inDivision")
+                break;
+                case VOLVER.classList.contains("inAsign"):
+                    asignsContainer.style.display="none"
+                    divisions.style.display="flex"
+                    VOLVER.classList.remove("inAsign")
+                    break;
+                }
+            }
+
+// function goBack(){
+//     switch (VOLVER) {
+//         case VOLVER.classList.contains("plataformasButton"):
+//             alert("Elpepe")
+//             break;
+//             case VOLVER.classList.contains("inDivision"):
+//                 divisions.style.display="none"
+//                 cursos.style.display="flex"
+//                 VOLVER.classList.remove("inDivision")
+//                 break;
+//                 case VOLVER.classList.contains("inAsign"):
+//                     asignsContainer.style.display="none"
+//                     divisions.style.display="flex"
+//                     VOLVER.classList.remove("inAsign")
+//                     break;
+//                 }
+//             }
+            console.log(goBack());
+            // buttonVoler.addEventListener('click',function(){
+    //     switch (buttonVoler.classList) {
+    //         case buttonVoler.classList.contains("plataformasButton"):
+    //             alert("Elpepe")
+    //             // history.go(-1)
+    //             break;
+    //             case buttonVoler.classList.contains("inDivision"):
+    //                 divisions.style.display="none"
+    //                 cursos.style.display="flex"
+    //                 break;
+    //                 case buttonVoler.classList.contains("inAsign"):
+    //                     asignsContainer.style.display="none"
+    //                     divisions.style.display="flex"
+    //                     break;
+    //                 }
+    //             })
