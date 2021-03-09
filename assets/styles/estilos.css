@@ -10,7 +10,7 @@ body {
 header {
   display: flex;
   width: 100%;
-  height: 125px;
+  height: auto;
   background: #16162d;
 }
 header h1 {
@@ -19,8 +19,8 @@ header h1 {
   margin: auto 0;
 }
 .logotypeContainer {
-  width: 138px;
-  height: 119px;
+  width: 7em;
+  height: 7em;
   margin: 0;
   margin-left: 6.5em;
 }
@@ -308,6 +308,10 @@ svg {
 /* END-PLATFORMS */
 /* START-RESPONSIVE */
 @media screen and (max-width:1025px){
+  .logotypeContainer {
+    width: 6em;
+    height: 6em;
+  }
   .hero h1{
     font-size:60px;
     margin-left: 1em;
@@ -329,6 +333,10 @@ svg {
   }
 }
 @media screen and (max-width:768px){
+  .logotypeContainer {
+    width: 5em;
+    height: 5em;
+  }
   header h1{
     font-size:2.8em;
   }
