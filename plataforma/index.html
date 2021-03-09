@@ -16,52 +16,25 @@
 <body>
     <!-- En la seccion menu se encuentra TODO el contenido de la seccion de plataforma Google Classroom -->
     <section class="menu">
-        <!-- Aqui comienza la seccion de botones, los tres poseen la propiedad "onclick", con diferentes propositos y argumentos, el primero es 
-        una funcion para regresar hacia la pagina anterior, el segundo y el tercer boton contienen una funcion que tenemos descrita en nuestro archivo
-    JavaScript, y el parametro nos indica hacia donde dirigen los mismos -->
-
-        <!-- Seccion Botones -->
-
-        <!-- Boton para volver al index -->
-        <button onclick="history.go(-1)" class="plataformasButton" id="botonVolver">
+         <button class="plataformasButton" >
             <svg xmlns="http://www.w3.org/2000/svg" width="31.5" height="27" viewBox="0 0 31.5 27">
                 <path id="Icon_ionic-md-school" data-name="Icon ionic-md-school"
                     d="M7.98,19.772v6L18,31.5l10.02-5.73v-6L18,25.5ZM18,4.5l-15.75,9L18,22.5l12.888-7.362V25.5H33.75v-12Z"
                     transform="translate(-2.25 -4.5)" fill="#fff" />
             </svg>
-            <a>Volver</div>
-        </button>
-        <!-- Boton para volver a la seccion de cursos -->
-        <button onclick="regresar(0,contents[0])" class="plataformasButton" id="haciaCursos">
-            <svg xmlns="http://www.w3.org/2000/svg" width="31.5" height="27" viewBox="0 0 31.5 27">
-                <path id="Icon_ionic-md-school" data-name="Icon ionic-md-school"
-                d="M7.98,19.772v6L18,31.5l10.02-5.73v-6L18,25.5ZM18,4.5l-15.75,9L18,22.5l12.888-7.362V25.5H33.75v-12Z"
-                transform="translate(-2.25 -4.5)" fill="#fff" />
-            </svg>
-            <a>Volver</div>
-        </button>
-        <!-- boton para regresar a divisiones -->
-        <button onclick="regresar(1,lastPage)" class="plataformasButton" id="haciaDivisiones">
-                <svg xmlns="http://www.w3.org/2000/svg" width="31.5" height="27" viewBox="0 0 31.5 27">
-                    <path id="Icon_ionic-md-school" data-name="Icon ionic-md-school"
-                        d="M7.98,19.772v6L18,31.5l10.02-5.73v-6L18,25.5ZM18,4.5l-15.75,9L18,22.5l12.888-7.362V25.5H33.75v-12Z"
-                        transform="translate(-2.25 -4.5)" fill="#fff" />
-                </svg>
-                <a>Volver</div>
-        </button>
-
-        <!-- Seccion cursos -->
-        <div id="curses">
+            <a>Volver</a>
+        </button>          
+        <div class="curses" id="curses">
             <h1>Elige tu curso</h1>
             <div class="cursesgrill">
-                <div onclick="showContent(1)">
+                <div onclick="showContentDivisions(1)">
                     <figure class="curseContainer">
                         <img src="https://i.imgur.com/45ysIEL.png" alt="">
                     </figure>
                     <h3>1<sup>er</sup> Año Ciclo Básico</h3>
 
                 </div>
-                <div onclick="showContent(2)">
+                <div onclick="showContentDivisions(2)">
 
                     <figure class="curseContainer">
                         <img src="https://i.imgur.com/45ysIEL.png" alt="">
@@ -69,7 +42,7 @@
                     <h3>2<sup>do</sup> Año Ciclo Básico</h3>
 
                 </div>
-                <div onclick="showContent(3)">
+                <div onclick="showContentDivisions(3)">
 
                     <figure class="curseContainer">
                         <img src="https://i.imgur.com/45ysIEL.png" alt="">
@@ -77,7 +50,7 @@
                     <h3>1<sup>er</sup> Año Ciclo Superior</h3>
 
                 </div>
-                <div onclick="showContent(4)">
+                <div onclick="showContentDivisions(4)">
 
                     <figure class="curseContainer">
                         <img src="https://i.imgur.com/45ysIEL.png" alt="">
@@ -85,7 +58,7 @@
                     <h3>2<sup>do</sup> Año Ciclo Superior</h3>
 
                 </div>
-                <div onclick="showContent(5)">
+                <div onclick="showContentDivisions(5)">
 
                     <figure class="curseContainer">
                         <img src="https://i.imgur.com/45ysIEL.png" alt="">
@@ -93,7 +66,7 @@
                     <h3>3<sup>er</sup> Año Ciclo Superior</h3>
 
                 </div>
-                <div onclick="showContent(6)">
+                <div onclick="showContentDivisions(6)">
 
                     <figure class="curseContainer">
                         <img src="https://i.imgur.com/45ysIEL.png" alt="">
@@ -103,35 +76,33 @@
                 </div>
             </div>
         </div>
-        
-        <!-- Seccion divisiones -->
-        <section id="divisiones">
+        <section class="divisions" id="divisions">
             <div id="division1">
-                <div onclick="showContent(8)">
+                <div onclick="showContentAsign(1)">
                     <figure class="curseContainer">
                         <img src="https://i.imgur.com/45ysIEL.png" alt="">
                     </figure>
                     <h3>1<sup>ro</sup> 1<sup>ra</sup> ciclo basico</h3>
                 </div>
-                <div onclick="showContent(9)">
+                <div onclick="showContentAsign(2)">
                     <figure class="curseContainer">
                         <img src="https://i.imgur.com/45ysIEL.png" alt="">
                     </figure>
                     <h3>1<sup>ro</sup> 2 <sup>da</sup> ciclo basico</h3>
                 </div>
-                <div onclick="showContent(10)">
+                <div onclick="showContentAsign(3)">
                     <figure class="curseContainer">
                         <img src="https://i.imgur.com/45ysIEL.png" alt="">
                     </figure>
                     <h3>1<sup>ro</sup> 3 <sup>ra</sup> ciclo basico</h3>
                 </div>
-                <div onclick="showContent(11)">
+                <div onclick="showContentAsign(4)">
                     <figure class="curseContainer">
                         <img src="https://i.imgur.com/45ysIEL.png" alt="">
                     </figure>
                     <h3>1<sup>ro</sup> 4 <sup>ta</sup> ciclo basico</h3>
                 </div>
-                <div onclick="showContent(12)">
+                <div onclick="showContentAsign(5)">
                     <figure class="curseContainer">
                         <img src="https://i.imgur.com/45ysIEL.png" alt="">
                     </figure>
@@ -139,25 +110,25 @@
                 </div>
             </div>
             <div id="division2">
-                <div onclick="showContent(13)">
+                <div onclick="showContentAsign(6)">
                     <figure class="curseContainer">
                         <img src="https://i.imgur.com/45ysIEL.png" alt="">
                     </figure>
                     <h3>2<sup>do</sup> 1 <sup>ra</sup> ciclo basico</h3>
                 </div>
-                <div onclick="showContent(14)">
+                <div onclick="showContentAsign(7)">
                     <figure class="curseContainer">
                         <img src="https://i.imgur.com/45ysIEL.png" alt="">
                     </figure>
                     <h3>2<sup>do</sup> 2 <sup>da</sup> ciclo basico</h3>
                 </div>
-                <div onclick="showContent(15)">
+                <div onclick="showContentAsign(8)">
                     <figure class="curseContainer">
                         <img src="https://i.imgur.com/45ysIEL.png" alt="">
                     </figure>
                     <h3>2<sup>do</sup> 3 <sup>ra</sup> ciclo basico</h3>
                 </div>
-                <div onclick="showContent(16)">
+                <div onclick="showContentAsign(9)">
                     <figure class="curseContainer">
                         <img src="https://i.imgur.com/45ysIEL.png" alt="">
                     </figure>
@@ -165,25 +136,25 @@
                 </div>
             </div>
             <div id="division3">
-                <div onclick="showContent(17)">
+                <div onclick="showContentAsign(10)">
                     <figure class="curseContainer">
                         <img src="https://i.imgur.com/45ysIEL.png" alt="">
                     </figure>
                     <h3>1<sup>ro</sup> 1 <sup>ra</sup> ciclo superior</h3>
                 </div>
-                <div onclick="showContent(18)">
+                <div onclick="showContentAsign(11)">
                     <figure class="curseContainer">
                         <img src="https://i.imgur.com/45ysIEL.png" alt="">
                     </figure>
                     <h3>1<sup>ro</sup> 2 <sup>da</sup> ciclo superior</h3>
                 </div>
-                <div onclick="showContent(19)">
+                <div onclick="showContentAsign(12)">
                     <figure class="curseContainer">
                         <img src="https://i.imgur.com/45ysIEL.png" alt="">
                     </figure>
                     <h3>1<sup>ro</sup> 3 <sup>ra</sup> ciclo superior</h3>
                 </div>
-                <div onclick="showContent(20)">
+                <div onclick="showContentAsign(13)">
                     <figure class="curseContainer">
                         <img src="https://i.imgur.com/45ysIEL.png" alt="">
                     </figure>
@@ -191,25 +162,25 @@
                 </div>
             </div>
             <div id="division4">
-                <div onclick="showContent(21)">
+                <div onclick="showContentAsign(14)">
                     <figure class="curseContainer">
                         <img src="https://i.imgur.com/45ysIEL.png" alt="">
                     </figure>
                     <h3>2<sup>do</sup> 1 <sup>ra</sup> ciclo superior</h3>
                 </div>
-                <div onclick="showContent(22)">
+                <div onclick="showContentAsign(15)">
                     <figure class="curseContainer">
                         <img src="https://i.imgur.com/45ysIEL.png" alt="">
                     </figure>
                     <h3>2<sup>do</sup> 2 <sup>da</sup> ciclo superior</h3>
                 </div>
-                <div onclick="showContent(23)">
+                <div onclick="showContentAsign(16)">
                     <figure class="curseContainer">
                         <img src="https://i.imgur.com/45ysIEL.png" alt="">
                     </figure>
                     <h3>2<sup>do</sup> 3 <sup>ra</sup> ciclo superior</h3>
                 </div>
-                <div onclick="showContent(24)">
+                <div onclick="showContentAsign(17)">
                     <figure class="curseContainer">
                         <img src="https://i.imgur.com/45ysIEL.png" alt="">
                     </figure>
@@ -217,19 +188,19 @@
                 </div>
             </div>
             <div id="division5">
-                <div onclick="showContent(25)">
+                <div onclick="showContentAsign(18)">
                     <figure class="curseContainer">
                         <img src="https://i.imgur.com/45ysIEL.png" alt="">
                     </figure>
                     <h3>3<sup>ro</sup> 1 <sup>ra</sup> ciclo superior</h3>
                 </div>
-                <div onclick="showContent(26)">
+                <div onclick="showContentAsign(19)">
                     <figure class="curseContainer">
                         <img src="https://i.imgur.com/45ysIEL.png" alt="">
                     </figure>
                     <h3>3<sup>ro</sup> 2 <sup>da</sup> ciclo superior</h3>
                 </div>
-                <div onclick="showContent(27)">
+                <div onclick="showContentAsign(20)">
                     <figure class="curseContainer">
                         <img src="https://i.imgur.com/45ysIEL.png" alt="">
                     </figure>
@@ -237,13 +208,13 @@
                 </div>
             </div>
             <div id="division6">
-                <div onclick="showContent(28)">
+                <div onclick="showContentAsign(21)">
                     <figure class="curseContainer">
                         <img src="https://i.imgur.com/45ysIEL.png" alt="">
                     </figure>
                     <h3>4<sup>ro</sup> 1 <sup>ra</sup> ciclo superior</h3>
                 </div>
-                <div onclick="showContent(29)">
+                <div onclick="showContentAsign(22)">
                     <figure class="curseContainer">
                         <img src="https://i.imgur.com/45ysIEL.png" alt="">
                     </figure>

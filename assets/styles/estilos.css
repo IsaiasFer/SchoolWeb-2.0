@@ -154,14 +154,21 @@ footer {
 /* ---END-FOOTER-CSS-GRID--- */
 
 /* -----START-SECTION-CONTACT-SCHOOL----- */
+.contactSchool div{
+  margin:10px 0;
+  align-items: center;
+}
+.contactSchool div p{
+  margin:0;
+}
 .titleContactSchool {
   display: inherit;
   font-size: 1.7em;
   font-family: "Agency FB", Roboto;
-  margin: 0% 1%;
+  margin: 0 1% 0;
 }
 .titleContactSchool h2 {
-  margin: 3% 0;
+  margin: 2% 0 0;
 }
 .location {
   display: inherit;
