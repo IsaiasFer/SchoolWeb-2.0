@@ -1,6 +1,42 @@
 /* * {
   border: RED 2px solid;
 } */
+/* FUENTES */
+@font-face {
+	font-family: 'icomoon';
+	src:  url('../fonts/icomoon.eot?6ppo9d');
+	src:  url('../fonts/icomoon.eot?6ppo9d#iefix') format('embedded-opentype'),
+	  url('../fonts/icomoon.ttf?6ppo9d') format('truetype'),
+	  url('../fonts/icomoon.woff?6ppo9d') format('woff'),
+	  url('../fonts/icomoon.svg?6ppo9d#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+  
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-menu1:before {
+	content: "\e900";
+  }
+  .icon-menu:before {
+	content: "\e9bd";
+  }
+  
+
+/* FUENTES */
 body {
   font-family: "Agency FB";
   margin: 0;
@@ -306,8 +342,25 @@ svg {
   font-size: 2em;
 }
 /* END-PLATFORMS */
+/* burguer-buttoN-START */
+.burguer-button{
+	text-align: center;
+	line-height:40px;
+	display:none;
+	width:40px;
+	height:40px;
+	border-radius: 50%;
+	background:rgba(55,58,64,.5);
+	position:fixed;
+	z-index:4;
+	left:7px;
+	top:7px;
+	color:#eeeeee;
+}
+
+/* burguer-button-END*/
 /* START-RESPONSIVE */
-@media screen and (max-width:1025px){
+@media screen and (max-width:1024px){
   .logotypeContainer {
     width: 6em;
     height: 6em;
@@ -363,6 +416,36 @@ svg {
   }
   .platforms{
     width:70%
+  }
+}
+@media screen and (max-width:767px){
+  .list{
+    justify-content: flex-end;
+  }
+  .burguer-button{
+    display: block;
+  }
+  .list-ul{
+		position:fixed;
+		background:rgba(29,37,44,.8);
+		z-index: 3;
+		top:0;
+		left:-100vw;
+		width:100vw;
+		bottom:0;
+		display:flex;
+		align-items: center;
+		justify-content: center;
+		transition:.3s;
+    flex-direction: column;
+    
+	}
+	.list-ul.isActive{
+		left:0;
+	}
+  .list ul{
+    width: 100%;
+    padding:25vh 0;
   }
 }
 /* END-RESPONSIVE */

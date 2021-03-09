@@ -183,3 +183,8 @@
   }
 }
 /*END-CARROUSEL*/
+/* RESPONSIVE-START */
+.list ul{
+  margin: 0;
+}
+/* RESPONSIVE END*/
