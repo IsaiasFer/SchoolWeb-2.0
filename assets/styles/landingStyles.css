@@ -183,8 +183,13 @@
   }
 }
 /*END-CARROUSEL*/
-/* RESPONSIVE-START */
 .list ul{
   margin: 0;
+}
+/* RESPONSIVE-START */
+@media screen and (max-width:425px){
+  .abouTextContainer h2{
+    margin: 0;
+  }
 }
 /* RESPONSIVE END*/

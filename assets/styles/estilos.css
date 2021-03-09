@@ -447,5 +447,39 @@ svg {
     width: 100%;
     padding:25vh 0;
   }
+  .navContainer{
+    height: 0;
+  }
+  .plataformasButton{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
+@media screen and (max-width:425px){
+  header h1{
+    font-size:1.8em;
+  }
+  .plataformasButton{
+    top:35px;
+  }
+}
+@media screen and (max-width:375px){
+  header h1{
+    font-size: 1em;
+  }
+  .logotypeContainer{
+    width: 3em;
+    height: 3em;
+  }
+  .hero h1{
+    margin-left:.5em;
+    margin-top: 1.3em;
+  }
+}
+@media screen and (max-width:320px){
+  .hero h1{
+    font-size:40px;
+  }
 }
 /* END-RESPONSIVE */
