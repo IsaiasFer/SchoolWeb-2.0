@@ -21,5 +21,22 @@
 .pageTitle {
   color: #16162d;
   font-size: 48px;
-  margin-left: 95px;
+  margin: .5em 0 .5em 2em;
+}
+@media screen and (max-width:1024px){
+  .photos{
+    padding:0 55px 20px;
+  }
+  .pageTitle{
+    font-size: 40px;
+    margin: .5em 0 .5em 1em;
+  }
+}
+@media screen and (max-width:768px){
+  .photos{
+    padding:0 20px 20px;
+  }
+  .pageTitle{
+    margin: .5em 0 .5em .5em;
+  }
 }

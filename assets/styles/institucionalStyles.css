@@ -8,15 +8,16 @@
 h3 {
   font-size: 30px;
   margin: 0;
+  color: white;
 }
 h4 {
   margin: 0;
   font-size: 24px;
+  color: gold;
 }
 .authorities {
   color: #16162d;
   display: grid;
-  flex-wrap: wrap;
   text-align: center;
   padding: 0 5em 3em;
   grid-template-columns: repeat(4,1fr);
@@ -33,6 +34,7 @@ h4 {
   height: 184px;
   width: 184px;
   box-shadow: 2px 2px 6px #000;
+  margin-bottom: 1em;
 }
 .authorities div figure img {
   width: 100%;
@@ -42,4 +44,23 @@ h4 {
 .fondoDegradado{
   background: linear-gradient(135deg, rgba(50,151,203,1) 0%, rgba(49,49,100,1) 100%);
   margin:0;
+}
+@media screen and (max-width:1024px){
+  h3{
+    font-size: 1.5em;
+  }
+  h4{
+    font-size: 1.3em;
+  }
+}
+@media screen and (max-width:768px){
+  .authorities{
+    grid-template-columns: repeat(3,1fr);
+  }
+  h3{
+    font-size: 1.29em;
+  }
+  h4{
+    font-size: 1em;
+  }
 }

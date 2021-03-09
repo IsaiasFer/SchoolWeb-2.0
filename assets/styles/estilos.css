@@ -14,7 +14,7 @@ header {
   background: #16162d;
 }
 header h1 {
-  font-size: 62px;
+  font-size: 3.8em;
   font-weight: 400;
   margin: auto 0;
 }
@@ -22,7 +22,12 @@ header h1 {
   width: 138px;
   height: 119px;
   margin: 0;
-  margin-left: 95px;
+  margin-left: 6.5em;
+}
+.logotypeContainer img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 /* ----END-HEADER----- */
 
@@ -48,7 +53,7 @@ figure {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  margin-left: 150px;
+  margin-left: 9.5em;
   color: red;
   width: 80%;
 }
@@ -102,7 +107,7 @@ figure {
 }
 .plataformasButton a {
   font-family: "Agency FB";
-  font-size: 30px;
+  font-size: 2.4em;
   font-weight: bold;
   color: white;
   text-decoration: none;
@@ -110,9 +115,9 @@ figure {
 }
 .hero h1 {
   position: absolute;
-  margin-left: 150px;
+  margin-left: 1.88em;
   margin-top: 115px;
-  font-size: 86px;
+  font-size: 80px;
   text-shadow: 0px 3px 6px #000000;
 }
 /* ----END-HERO----- */
@@ -301,3 +306,55 @@ svg {
   font-size: 2em;
 }
 /* END-PLATFORMS */
+/* START-RESPONSIVE */
+@media screen and (max-width:1025px){
+  .hero h1{
+    font-size:60px;
+    margin-left: 1em;
+  }
+  .list{
+    margin-left:4em;
+  }
+  .logotypeContainer{
+    margin-left: 3.5em;
+  }
+  .list{
+    width: 90%;
+  }
+  .list ul{
+    width: 65%;
+  }
+  .platforms{
+    width:55%
+  }
+}
+@media screen and (max-width:768px){
+  header h1{
+    font-size:2.8em;
+  }
+  .plataformasButton a{
+    display: none;
+  }
+  .plataformasButton{
+    width: 4em;
+    height: 4em;
+  }
+  .plataformasButton:hover{
+    width: 5em;
+    height: 5em;
+  }
+  .plataformasButton:active{
+    width: 4em;
+    height: 4em;
+  }
+  .list{
+    width: 85%;
+  }
+  .list ul{
+    width: 87%;
+  }
+  .platforms{
+    width:70%
+  }
+}
+/* END-RESPONSIVE */

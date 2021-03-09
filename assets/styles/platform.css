@@ -93,3 +93,22 @@
     color:#16162d;
     font-size: 2.2em;
 }
+@media screen and (max-width:1024px){
+    .plataformasButton a{
+        display:block
+    }
+    .curseContainer{
+        width: 8em;
+        height: 8em;
+    }
+}
+@media screen and (max-width:768px){
+    h3{
+        font-size: 14px;
+    }
+    .curseContainer{
+        width: 5em;
+        height: 5em;
+    }
+
+}
