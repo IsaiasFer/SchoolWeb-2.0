@@ -1,6 +1,6 @@
-* {
+/* * {
   border: RED 1px solid;
-}
+} */
 /* FUENTES */
 @font-face {
 	font-family: 'icomoon';
@@ -152,7 +152,7 @@ figure {
 .hero h1 {
   position: absolute;
   margin-left: 1.88em;
-  margin-top: 115px;
+  margin-top: 1.4em;
   font-size: 80px;
   text-shadow: 0px 3px 6px #000000;
 }
@@ -232,7 +232,7 @@ footer {
 
 .contactFafe {
   display: grid;
-  grid-template-rows: 70% 30%;
+  grid-template-rows: 60% 40%;
   grid-template-columns: 1fr;
   grid-template-areas:
     "logotypeFafe"
@@ -241,9 +241,10 @@ footer {
 }
 .logotypeFafe {
   grid-area: logotypeFafe;
-  height: 70%;
+  height: 100%;
   position: relative;
-  margin: 8% auto 0%;
+  margin: 0 auto;
+  padding-top: 8%;
 }
 #FAFE {
   font-family: Rockwell;
@@ -267,19 +268,11 @@ footer {
 .socialNetworks {
   grid-area: socialNetworks;
   display: flex;
-  justify-content: center;
   width: 100%;
+  justify-content: center;
 }
-.facebookFafe {
-  margin: auto 3%;
-}
-.twitter {
-  margin: auto 3%;
-}
-.instagram {
-  margin: auto 3%;
-}
-.github {
+.socialNetworks a{
+  
   margin: auto 3%;
 }
 .copyright {
@@ -467,12 +460,32 @@ svg {
   }
 }
 @media screen and (max-width:425px){
+  .socialNetworks {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 50% 50%;
+    width: 100%;
+    justify-items: center;
+    align-content: center;
+  }
   header h1{
     font-size:1.8em;
   }
   .plataformasButton{
     top:35px;
   }
+  .socialNetworks a{
+    margin: 0 3% 0;
+  }
+  .contactSchool div p {
+    margin: 0;
+    font-size: 0.9em;
+}
+.hero h1 {
+  font-size: 45px;
+  margin-left: .5em;
+  margin-top: .6em;
+}
 }
 @media screen and (max-width:375px){
   header h1{

@@ -204,12 +204,29 @@
     margin: 0px 5% 0.7em;
   }
 }
-@media screen and (max-width:425px){
-  .about{
-    height: 700vh;
-  }
+@media screen and (max-width:695px){
   .abouTextContainer h2{
-    margin: 0;
+    font-size: 1.7em;
+  }
+  .abouTextContainer h1{
+    font-size: 60px;
+  }
+  .about{
+    height: 80vh;
   }
 }
+@media screen and (max-width:545px){
+  .abouTextContainer h2{
+    margin: 0 0 1em;
+  }
+}
+@media screen and (max-width:375px){
+  .abouTextContainer h1 {
+    font-size: 45px;
+}
+.abouTextContainer h2 {
+  font-size: 1.4em;
+}
+}
+
 /* RESPONSIVE END*/
