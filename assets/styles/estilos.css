@@ -2,7 +2,7 @@
   border: RED 2px solid;
 } */
 body {
-  font-family: "Agency FB";
+  font-family: 'Barlow Condensed', sans-serif;
   margin: 0;
   color: white;
 }
@@ -101,7 +101,7 @@ figure {
   height:4em;
 }
 .plataformasButton a {
-  font-family: "Agency FB";
+  font-family: 'Barlow Condensed', sans-serif;
   font-size: 30px;
   font-weight: bold;
   color: white;
@@ -164,7 +164,7 @@ footer {
 .titleContactSchool {
   display: inherit;
   font-size: 1.7em;
-  font-family: "Agency FB", Roboto;
+  font-family: 'Barlow Condensed', Roboto;
   margin: 0 1% 0;
 }
 .titleContactSchool h2 {
