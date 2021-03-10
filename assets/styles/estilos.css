@@ -1,6 +1,6 @@
-/* * {
-  border: RED 2px solid;
-} */
+* {
+  border: RED 1px solid;
+}
 /* FUENTES */
 @font-face {
 	font-family: 'icomoon';
@@ -360,7 +360,7 @@ svg {
 
 /* burguer-button-END*/
 /* START-RESPONSIVE */
-@media screen and (max-width:1024px){
+@media screen and (max-width:1110px){
   .logotypeContainer {
     width: 6em;
     height: 6em;
@@ -369,13 +369,11 @@ svg {
     font-size:60px;
     margin-left: 1em;
   }
-  .list{
-    margin-left:4em;
-  }
   .logotypeContainer{
     margin-left: 3.5em;
   }
   .list{
+    margin-left:4em;
     width: 90%;
   }
   .list ul{
@@ -385,14 +383,12 @@ svg {
     width:55%
   }
 }
-@media screen and (max-width:768px){
-  .logotypeContainer {
-    width: 5em;
-    height: 5em;
+@media screen and (max-width:1024px){
+  .contactSchool{
+    padding: 0% 9%;
   }
-  header h1{
-    font-size:2.8em;
-  }
+}
+@media screen and (max-width:890px){
   .plataformasButton a{
     display: none;
   }
@@ -418,9 +414,22 @@ svg {
     width:70%
   }
 }
+@media screen and (max-width:768px){
+  .logotypeContainer {
+    width: 5em;
+    height: 5em;
+  }
+  header h1{
+    font-size:2.8em;
+  }
+  .contactSchool{
+    padding: 0 0 0 5%;
+  }
+}
 @media screen and (max-width:767px){
   .list{
     justify-content: flex-end;
+    margin-left: 0;
   }
   .burguer-button{
     display: block;
@@ -449,6 +458,7 @@ svg {
   }
   .navContainer{
     height: 0;
+    width: 0;
   }
   .plataformasButton{
     position: absolute;
@@ -474,7 +484,7 @@ svg {
   }
   .hero h1{
     margin-left:.5em;
-    margin-top: 1.3em;
+    margin-top: .5em;
   }
 }
 @media screen and (max-width:320px){
