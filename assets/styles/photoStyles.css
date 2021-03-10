@@ -40,3 +40,13 @@
     margin: .5em 0 .5em .5em;
   }
 }
+@media screen and (max-width:767px){
+  .photos {
+    column-count: 3;
+  }
+}
+@media screen and (max-width:450px){
+  .photos {
+    column-count: 2;
+  }
+}
