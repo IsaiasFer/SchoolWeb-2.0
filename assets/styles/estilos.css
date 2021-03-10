@@ -458,6 +458,9 @@ svg {
     top: 10px;
     right: 10px;
   }
+  .titleContactSchool h2 {
+    font-size:1.2em
+}
 }
 @media screen and (max-width:425px){
   .socialNetworks {
