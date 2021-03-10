@@ -26,13 +26,13 @@
 /* ----------END-HERO------------ */
 
 /* ----------START-NEWS----------*/
-.news {
+.newsFirst {
   /* display: inherit; */
   display: inline-block;
   margin: 0;
   /* width: 100vw; */
-  /* height: 100vh; */
-  height: 1500px;
+  height: 100vh;
+  /* height: 1500px; */
   background: linear-gradient(
     135deg,
     rgba(50, 151, 203, 1) 0%,
@@ -49,31 +49,75 @@
   display: grid;
   /* border:solid 2px rgb(218, 17, 17); */
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-rows: 12% 35% 1fr 12% 35%;
   /* grid-template-rows: 50% 50%; */
+  grid-template-areas: "titleNew-1 titleNew-2 titleNew-3"
+                       "new1 new2 new3"
+                       ". . ."
+                       "titleNew-4 titleNew-5 titleNew-6"
+                       "new4 new5 new6" ;
   justify-items: center;
   grid-column-gap: 6%;
   margin: auto 9%;
-  height: 90%;
+  /* height: 100%; */
+  height: 80vh;
+}
+.newsContainer h1{
+  font-size: 1.5em;
+  margin: 0;
 }
 .new {
   width: 100%;
   height: 100%;
 }
 .titleNew-1 {
-  font-size: 1.5em;
+  grid-area: titleNew-1;
+}
+.titleNew-2 {
+  grid-area: titleNew-2;
+}
+.titleNew-3 {
+  grid-area: titleNew-3;
+}
+.titleNew-4 {
+  grid-area: titleNew-4;
+}
+.titleNew-5 {
+  grid-area: titleNew-5;
+}
+.titleNew-6 {
+  grid-area: titleNew-6;
+}
+.new1{
+  grid-area: new1;
+}
+.new2{
+  grid-area: new2;
+}
+.new3{
+  grid-area: new3;
+}
+.new4{
+  grid-area: new4;
+}
+.new5{
+  grid-area: new5;
+}
+.new6{
+  grid-area: new6;
 }
 .newImageContainer {
   width: 100%;
-  height: 65%;
+  /* height: 65%; */
+  height: 100%;
   cursor: pointer;
   position: relative;
 }
-.newImagen {
+/* .newImagen {
   object-fit: cover;
   width: 100%;
   height: 100%;
-}
+} */
 .layerNew {
   position: absolute;
   top: 0;
@@ -98,6 +142,9 @@
 .newImageContainer:hover > .layerNew h2 {
   margin-top: 20%;
   margin-bottom: 5%;
+}
+.newsSecond {
+  display: none;
 }
 /* ----------START-CSS-GRID-NEWS---------- */
 /* ----------END-NEWS---------- */
