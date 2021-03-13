@@ -1,3 +1,41 @@
+/* ------------ARROWS-FONTS---------- */
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon-Arrows.eot?m5iosp');
+  src:  url('../fonts/icomoon-Arrows.eot?m5iosp#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon-Arrows.ttf?m5iosp') format('truetype'),
+    url('../fonts/icomoon-Arrows.woff?m5iosp') format('woff'),
+    url('../fonts/icomoon-Arrows.svg?m5iosp#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow_back_ios:before {
+  content: "\e900";
+}
+.icon-arrow_forward_ios:before {
+  content: "\e901";
+  font-size: 2em;
+  cursor: pointer;
+}
+/* ------------ARROWS-FONTS---------- */
+
 /* -----------START-HERO----- */
 .hero {
   display: flex;
@@ -26,18 +64,43 @@
 /* ----------END-HERO------------ */
 
 /* ----------START-NEWS----------*/
-.newsFirst {
-  /* display: inherit; */
-  display: inline-block;
-  margin: 0;
-  /* width: 100vw; */
-  height: 100vh;
-  /* height: 1500px; */
+.sectionNews {
   background: linear-gradient(
     135deg,
     rgba(50, 151, 203, 1) 0%,
     rgba(49, 49, 100, 1) 100%
-  );
+    );
+    /* width: 657px; */
+  width: 100%;
+  /* width: 98vw; */
+  height: 100vh;
+  /* overflow: hidden; */
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.containerNewsCoursel {
+  display: flex;
+  width: 200%;
+  /* position: relative; */
+  /* left: 0; */
+}
+.newsFirst {
+  /* display: inherit; */
+  /* display: none; */
+  display: inline-block;
+  margin: 0;
+  width: 50%;
+  /* float: left; */
+  /* position: absolute; */
+}
+.newsSecond {
+  /* display: none; */
+  /* display: inherit; */
+  display: inline-block;
+  margin: 0;
+  width: 50%;
+  /* float: left; */
+  /* position: absolute; */
 }
 .titleNews h1 {
   font-size: 3em;
@@ -45,23 +108,40 @@
 }
 
 /* ----------START-CSS-GRID-NEWS---------- */
-.newsContainer {
+.newsContainer-1 {
   display: grid;
-  /* border:solid 2px rgb(218, 17, 17); */
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 12% 35% 1fr 12% 35%;
   /* grid-template-rows: 50% 50%; */
+  /* grid-template-rows: 6% 17.5% 1fr 6% 17.5%; */
   grid-template-areas: "titleNew-1 titleNew-2 titleNew-3"
-                       "new1 new2 new3"
-                       ". . ."
-                       "titleNew-4 titleNew-5 titleNew-6"
-                       "new4 new5 new6" ;
+  "new1 new2 new3"
+  ". . ."
+  "titleNew-4 titleNew-5 titleNew-6"
+  "new4 new5 new6" ;
   justify-items: center;
   grid-column-gap: 6%;
   margin: auto 9%;
-  /* height: 100%; */
   height: 80vh;
 }
+.newsContainer-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 12% 35% 1fr 12% 35%;
+  grid-template-areas: "titleNew-7 titleNew-8 titleNew-9"
+  "new7 new8 new9"
+  ". . ."
+  "titleNew-10 titleNew-11 titleNew-12"
+  "new10 new11 new12" ;
+  justify-items: center;
+  grid-column-gap: 6%;
+  margin: auto 9%;
+  height: 80vh;
+  margin: calc(58px + 2%) 9% 0 9%;
+}
+/* .olds {
+  height: 90vh;
+} */
 .newsContainer h1{
   font-size: 1.5em;
   margin: 0;
@@ -88,6 +168,25 @@
 .titleNew-6 {
   grid-area: titleNew-6;
 }
+
+.titleNew-7 {
+  grid-area: titleNew-7;
+}
+.titleNew-8 {
+  grid-area: titleNew-8;
+}
+.titleNew-9 {
+  grid-area: titleNew-9;
+}
+.titleNew-10 {
+  grid-area: titleNew-10;
+}
+.titleNew-11 {
+  grid-area: titleNew-11
+}
+.titleNew-12 {
+  grid-area: titleNew-12
+}  
 .new1{
   grid-area: new1;
 }
@@ -105,6 +204,25 @@
 }
 .new6{
   grid-area: new6;
+}
+
+.new7{
+  grid-area: new7;
+}
+.new8{
+  grid-area: new8;
+}
+.new9{
+  grid-area: new9;
+}
+.new10{
+  grid-area: new10;
+}
+.new11{
+  grid-area: new11;
+}
+.new12{
+  grid-area: new12;
 }
 .newImageContainer {
   width: 100%;
@@ -143,9 +261,10 @@
   margin-top: 20%;
   margin-bottom: 5%;
 }
-.newsSecond {
-  display: none;
-}
+/* .arrow-left {
+  width: 40px;
+  width: 50px;
+} */
 /* ----------START-CSS-GRID-NEWS---------- */
 /* ----------END-NEWS---------- */
 
