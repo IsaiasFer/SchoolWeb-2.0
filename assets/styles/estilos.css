@@ -423,6 +423,7 @@ svg {
   .list{
     justify-content: flex-end;
     margin-left: 0;
+    width:100%;
   }
   .burguer-button{
     display: block;
