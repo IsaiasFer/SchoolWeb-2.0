@@ -385,6 +385,14 @@ svg {
     padding: 0% 9%;
   }
 }
+@media screen and (max-width:970px){
+  .list ul{
+    width: 87%;
+  }
+  header h1{
+    font-size:2.8em;
+  }
+}
 @media screen and (max-width:890px){
   .plataformasButton a{
     display: none;
@@ -416,14 +424,19 @@ svg {
     width: 5em;
     height: 5em;
   }
-  header h1{
-    font-size:2.8em;
-  }
   .contactSchool{
     padding: 0 0 0 5%;
   }
 }
 @media screen and (max-width:767px){
+.plataformasButton:active{
+  width: 3em;
+  height: 3em;
+}
+.plataformasButton:hover {
+  width: 4em;
+  height: 4em;
+}
   .list{
     justify-content: flex-end;
     margin-left: 0;
@@ -466,6 +479,24 @@ svg {
   .titleContactSchool h2 {
     font-size:1em
 }
+.platforms{
+  flex-direction: column;
+  align-items: center;
+  height: 50%;
+}
+}
+@media screen and (max-width:740px){
+  header h1{
+    font-size:1.8em;
+  }
+}
+@media screen and (max-width:455px){
+  .hero h1 {
+  font-size: 45px;
+  margin-left: .5em;
+  margin-top: .6em;
+}
+
 }
 @media screen and (max-width:425px){
   .socialNetworks {
@@ -476,12 +507,7 @@ svg {
     justify-items: center;
     align-content: center;
   }
-  header h1{
-    font-size:1.8em;
-  }
-  .plataformasButton{
-    top:35px;
-  }
+  
   .socialNetworks a{
     margin: 0 3% 0;
   }
@@ -489,11 +515,7 @@ svg {
     margin: 0;
     font-size: 0.9em;
 }
-.hero h1 {
-  font-size: 45px;
-  margin-left: .5em;
-  margin-top: .6em;
-}
+
 }
 @media screen and (max-width:375px){
   header h1{
@@ -507,8 +529,16 @@ svg {
     margin-left:.5em;
     margin-top: .5em;
   }
+  .plataformasButton{
+    top: 0px;
+    padding: 0;
+    justify-content: center;
+    width: 3em;
+    height: 3em;
+    right: 0;
+  }
 }
-@media screen and (max-width:320px){
+@media screen and (max-width:345px){
   .hero h1{
     font-size:40px;
   }
