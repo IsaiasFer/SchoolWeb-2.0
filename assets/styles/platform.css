@@ -4,7 +4,7 @@
 }
 .plataformasButton{
     margin: 40px 0 0 95px;
-    width: 10em;
+    width: 12em;
 }
 .plataformasButton:hover{
     width: 11em;
@@ -36,6 +36,7 @@
 .cursesgrill div h3, #divisions div div h3{
     margin:0;
     color: white;
+    text-align: center;
 }
 .curseContainer{
     text-align: center;
@@ -51,6 +52,7 @@
     height: 100%;
     width: 100%;
     object-fit: contain;
+    background: unset;
 }
 #divisions{
     display:none;
@@ -66,6 +68,7 @@
     grid-gap:24px;
     cursor: pointer;
     transition:.3s;
+    flex-wrap: wrap;
 }
 #divisions div div{
     display:flex;
@@ -102,6 +105,26 @@
         height: 8em;
     }
 }
+@media screen and (max-width:890px){
+    .plataformasButton a{
+        display: none;
+      }
+      .plataformasButton{
+        width: 4em;
+        height: 4em;
+      }
+      .plataformasButton:hover{
+        width: 5em;
+        height: 5em;
+      }
+      .plataformasButton:active{
+        width: 4em;
+        height: 4em;
+      }
+      .cursesgrill{
+        grid-template-columns: repeat(3,1fr);
+        }
+}
 @media screen and (max-width:768px){
     h3{
         font-size: 14px;
@@ -110,5 +133,12 @@
         width: 5em;
         height: 5em;
     }
-
+}
+@media screen and (max-width:425px){
+    .cursesgrill{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap:24px;
+    }
+    
 }
