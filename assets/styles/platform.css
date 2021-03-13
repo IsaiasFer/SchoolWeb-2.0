@@ -1,4 +1,12 @@
+.menu, #divisions{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient( 
+        135deg
+        , rgba(50, 151, 203, 1) 0%, rgba(49, 49, 100, 1) 100% );
+}
 .menu{
+    position: unset;
     display: block;
     z-index: 0;
 }
@@ -21,7 +29,7 @@
     display:flex;
     flex-direction: column;
     align-items: center;
-    margin-top:3em;
+    padding-top:3em;
 }
 #curses h1{
     font-size:2.5em;
@@ -63,7 +71,7 @@
     display:none;
     flex-direction: column;
     align-items: center;
-    margin-top:3em;
+    padding-top:3em;
     transition: .3s;
 }
 #divisions div{
@@ -82,9 +90,14 @@
     justify-content: center;
     margin: 1em 1em 0;
 }
+.asignaturas{
+    background:linear-gradient( 
+        135deg
+        , rgba(50, 151, 203, 1) 0%, rgba(49, 49, 100, 1) 100% );
+}
 .asign{
     display:none;
-    margin-top:4em;
+    padding-top:4em;
 }
 .asign ul{
     padding: 0;
@@ -93,6 +106,9 @@
 .asign ul li{
     list-style: none;
     margin: 2em 0;
+}
+.asign ul li:first-child{
+    margin-top: 1em;
 }
 .asign ul li a{
     font-size:2em;
@@ -150,6 +166,9 @@
 @media screen and (max-width:767px){
     .curses h1{
         margin: 0 0 .5em;
+    }
+    .asign{
+        padding-top: 3em;
     }
     .plataformasButton{
         height: 3em;
