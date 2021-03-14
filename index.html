@@ -15,6 +15,7 @@
     />
     <link rel="stylesheet" href="assets/styles/estilos.css" />
     <link rel="stylesheet" href="assets/styles/landingStyles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css">
   </head>
   <body>
     <!-- ----------START-HEADER---------- -->
@@ -104,7 +105,16 @@
     <section class="sectionNews">
      <div class="containerNewsCoursel">
 
-       <section class="newsFirst">
+      <button aria-label="Anterior" class="carousel__anterior">
+        <i class="fas fa-chevron-left"></i>
+      </button> 
+      <button aria-label="Siguiente" class="carousel__siguiente">
+				<i class="fas fa-chevron-right"></i>
+			</button>   
+        
+      <div class="carouselList">
+
+        <section class="newsFirst">
          <div class="titleNews">
            <h1>ULTIMAS NOVEDADES</h1>
           </div>
@@ -218,9 +228,7 @@
             </article>
           </div>
         </section>
-        <a class="icon-arrow_forward_ios arrow-left" href="#section-2">
-        </a>    
-        <section class="newsSecond" id="section-2">
+        <section class="newsSecond" >
           <div class="newsContainer-2 olds">
             <div class="titleNew-7">
               <h1>FORMULARIO DE INSCRIPCION DE EXAMENES</h1>
@@ -340,8 +348,11 @@
             </figure>
           </article> -->
         </section>
-       </div> 
-      </section>
+      </div>
+        
+      <div role="tablist" class="carouselIndicate"></div>
+		 </div>
+    </section>
       <!-- ----------END-NEWS---------- -->
       
           <!-- ----------START-ABOUT---------- -->
@@ -516,5 +527,8 @@
     <!-- ----------END-FOOTER---------- -->
     <script src="./assets/scripts/script.js"></script>
     <script src="./assets/scripts/burguerbutton.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
+    <script src="assets/scripts/glider.js"></script>
   </body>
 </html>
