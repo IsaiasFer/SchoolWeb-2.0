@@ -1,0 +1,92 @@
+.navContainer{
+    position: sticky;
+    top: -1px;
+}
+.newContainer{
+    background: linear-gradient(135deg, rgba(50,151,203,1) 0%, rgba(49,49,100,1) 100%);
+    padding: 1em 1em 1em 6.5em;
+}
+.title,.date,.content,.autor{
+    margin:0;
+}
+.date,.autor{
+    color:rgb(255 255 255 / 76%)
+}
+.title{
+    font-size:3.8em
+}
+.content{
+    font-size:1.5em;
+    line-height: 1.5;
+}
+.autorContainer{
+    display:flex;
+    align-items: center;
+    margin-bottom:1em;
+}
+.autorContainer figure img{
+    height: 100%;
+    width:100%;
+    object-fit: contain;
+    background: unset;
+    margin-left: .5em;
+}
+.autorContainer figure{
+    width: 1.5em;
+    height: 1.5em;
+}
+.imgContainer{
+    width:80vw;
+    height: 500px;
+}
+.imgContainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+@media screen and (max-width:1024px){
+    .newContainer{
+        padding-left: 4.5em;
+    }
+}
+@media screen and (max-width:768px){
+    .newContainer{
+        padding-left: 3.5em;
+    }
+    
+}
+@media screen and (max-width:767px){
+    .navContainer{
+        position:unset;
+    }
+}
+@media screen and (max-width:620px){
+    .newContainer{
+        padding-left: 2.5em;
+    }
+    .title{
+        font-size:2em
+    }
+    .content{
+        font-size: 1.1em;
+    }
+    .date,.autor{
+        font-size:0.9em
+    }
+}
+@media screen and (max-width:620px){
+    .newContainer{
+        padding-left: 1.5em;
+    }
+}
+@media screen and (max-width:620px){
+    .newContainer{
+        padding-left: 1em;
+    }
+    .title{
+        font-size:2em
+    }
+    .content{
+        font-size: 1em;
+    }
+}

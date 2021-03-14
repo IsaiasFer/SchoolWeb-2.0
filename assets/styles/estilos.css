@@ -319,6 +319,7 @@ svg {
   display: flex;
   width: 40%;
   justify-content: space-around;
+  padding:0;
 }
 .platforms li{
   list-style: none;
@@ -337,6 +338,7 @@ svg {
 }
 .menu nav span{
   font-size: 2em;
+  text-align: center;
 }
 /* END-PLATFORMS */
 /* burguer-buttoN-START */
@@ -482,12 +484,29 @@ svg {
 .platforms{
   flex-direction: column;
   align-items: center;
-  height: 50%;
+  height: 60%;
 }
-}
-@media screen and (max-width:740px){
-  header h1{
+header h1{
     font-size:1.8em;
+  }
+}
+
+@media screen and (max-width:590px){
+  .plataformasButton{
+    top: 0px;
+    padding: 0;
+    justify-content: center;
+    width: 3em;
+    height: 3em;
+    right: 0;
+  }
+  .plataformasButton:hover{
+    width: 3.1em;
+    height: 3.1em;
+  }
+  .plataformasButton:active{
+    width: 2.8em;
+    height: 2.8em;
   }
 }
 @media screen and (max-width:455px){
@@ -529,13 +548,10 @@ svg {
     margin-left:.5em;
     margin-top: .5em;
   }
-  .plataformasButton{
-    top: 0px;
-    padding: 0;
-    justify-content: center;
-    width: 3em;
-    height: 3em;
-    right: 0;
+}
+@media screen and (max-width:360px){
+  header h1{
+    font-size: .8em;
   }
 }
 @media screen and (max-width:345px){
