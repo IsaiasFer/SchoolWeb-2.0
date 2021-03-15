@@ -32,44 +32,56 @@
     rgba(50, 151, 203, 1) 0%,
     rgba(49, 49, 100, 1) 100%
     );
-    /* width: 657px; */
-  /* width: 100%; */
-  /* width: 98vw; */
-  /* height: 100vh; */
-  /* overflow: hidden; */
-  /* overflow-x: scroll; */
-  /* overflow-y: hidden; */
 }
 .containerNewsCoursel {
-  /* display: flex; */
-  /* width: 200%; */
+  position: relative;
 }
 .newsFirst {
-  display: inline-block;
+  /* display: block; */
   margin: 0;
-  width: 50%;
-  /* float: left; */
-  /* position: absolute; */
+  /* width: 50%; */
 }
 .newsSecond {
-  /* display: none; */
-  /* display: inherit; */
-  display: inline-block;
+  /* display: block; */
   margin: 0;
-  width: 50%;
-  /* float: left; */
-  /* position: absolute; */
+  /* width: 50%; */
 }
 .titleNews h1 {
   font-size: 3em;
   margin: 2% 9% 0%;
+}
+.carousel__siguiente , .carousel__anterior{
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  color: #fff;
+  display: block;
+  width: 30px;
+  height: 30px;
+  z-index: 1;
+  position: absolute;
+  right: 3%;
+  top: 50%;
+  opacity: 40%;
+}
+.carousel__anterior {
+  left: 3%;
+  top: 50%;
+}
+.carousel__anterior:hover,
+.carousel__siguiente:hover {
+	opacity: 100%;
+}
+.fas {
+  font-size: 30px;
 }
 
 /* ----------START-CSS-GRID-NEWS---------- */
 .newsContainer-1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 12% 35% 1fr 12% 35%;
+  grid-template-rows: 14% 35% 1fr 14% 35%;
   /* grid-template-rows: 50% 50%; */
   /* grid-template-rows: 6% 17.5% 1fr 6% 17.5%; */
   grid-template-areas: "titleNew-1 titleNew-2 titleNew-3"
@@ -189,11 +201,6 @@
   cursor: pointer;
   position: relative;
 }
-/* .newImagen {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-} */
 .layerNew {
   position: absolute;
   top: 0;
@@ -219,11 +226,20 @@
   margin-top: 20%;
   margin-bottom: 5%;
 }
-/* .arrow-left {
-  width: 40px;
-  width: 50px;
-} */
 /* ----------START-CSS-GRID-NEWS---------- */
+.linkNews h1 {
+  margin: 0%;
+}
+.linkNews {
+  /* text-decoration: none; */
+  color: #fff;
+  font-size: 1.5em;
+  margin: 0%;
+}
+.linkNews:hover{
+  /* text-decoration: none; */
+  color: rgb(87, 78, 78);
+}
 /* ----------END-NEWS---------- */
 
 /* ----------START-ABOUT---------- */
