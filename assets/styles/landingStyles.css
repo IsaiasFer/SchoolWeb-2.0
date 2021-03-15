@@ -26,42 +26,92 @@
 /* ----------END-HERO------------ */
 
 /* ----------START-NEWS----------*/
-.newsFirst {
-  /* display: inherit; */
-  display: inline-block;
-  margin: 0;
-  /* width: 100vw; */
-  height: 100vh;
-  /* height: 1500px; */
+.sectionNews {
   background: linear-gradient(
     135deg,
     rgba(50, 151, 203, 1) 0%,
     rgba(49, 49, 100, 1) 100%
-  );
+    );
+}
+.containerNewsCoursel {
+  position: relative;
+}
+.newsFirst {
+  /* display: block; */
+  margin: 0;
+  /* width: 50%; */
+}
+.newsSecond {
+  /* display: block; */
+  margin: 0;
+  /* width: 50%; */
 }
 .titleNews h1 {
   font-size: 3em;
   margin: 2% 9% 0%;
 }
+.carousel__siguiente , .carousel__anterior{
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  color: #fff;
+  display: block;
+  width: 30px;
+  height: 30px;
+  z-index: 1;
+  position: absolute;
+  right: 3%;
+  top: 50%;
+  opacity: 40%;
+}
+.carousel__anterior {
+  left: 3%;
+  top: 50%;
+}
+.carousel__anterior:hover,
+.carousel__siguiente:hover {
+	opacity: 100%;
+}
+.fas {
+  font-size: 30px;
+}
 
 /* ----------START-CSS-GRID-NEWS---------- */
-.newsContainer {
+.newsContainer-1 {
   display: grid;
-  /* border:solid 2px rgb(218, 17, 17); */
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 12% 35% 1fr 12% 35%;
+  grid-template-rows: 14% 35% 1fr 14% 35%;
   /* grid-template-rows: 50% 50%; */
+  /* grid-template-rows: 6% 17.5% 1fr 6% 17.5%; */
   grid-template-areas: "titleNew-1 titleNew-2 titleNew-3"
-                       "new1 new2 new3"
-                       ". . ."
-                       "titleNew-4 titleNew-5 titleNew-6"
-                       "new4 new5 new6" ;
+  "new1 new2 new3"
+  ". . ."
+  "titleNew-4 titleNew-5 titleNew-6"
+  "new4 new5 new6" ;
   justify-items: center;
   grid-column-gap: 6%;
   margin: auto 9%;
-  /* height: 100%; */
   height: 80vh;
 }
+.newsContainer-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 12% 35% 1fr 12% 35%;
+  grid-template-areas: "titleNew-7 titleNew-8 titleNew-9"
+  "new7 new8 new9"
+  ". . ."
+  "titleNew-10 titleNew-11 titleNew-12"
+  "new10 new11 new12" ;
+  justify-items: center;
+  grid-column-gap: 6%;
+  margin: auto 9%;
+  height: 80vh;
+  margin: calc(58px + 2%) 9% 0 9%;
+}
+/* .olds {
+  height: 90vh;
+} */
 .newsContainer h1{
   font-size: 1.5em;
   margin: 0;
@@ -88,6 +138,25 @@
 .titleNew-6 {
   grid-area: titleNew-6;
 }
+
+.titleNew-7 {
+  grid-area: titleNew-7;
+}
+.titleNew-8 {
+  grid-area: titleNew-8;
+}
+.titleNew-9 {
+  grid-area: titleNew-9;
+}
+.titleNew-10 {
+  grid-area: titleNew-10;
+}
+.titleNew-11 {
+  grid-area: titleNew-11
+}
+.titleNew-12 {
+  grid-area: titleNew-12
+}  
 .new1{
   grid-area: new1;
 }
@@ -106,6 +175,25 @@
 .new6{
   grid-area: new6;
 }
+
+.new7{
+  grid-area: new7;
+}
+.new8{
+  grid-area: new8;
+}
+.new9{
+  grid-area: new9;
+}
+.new10{
+  grid-area: new10;
+}
+.new11{
+  grid-area: new11;
+}
+.new12{
+  grid-area: new12;
+}
 .newImageContainer {
   width: 100%;
   /* height: 65%; */
@@ -113,11 +201,6 @@
   cursor: pointer;
   position: relative;
 }
-/* .newImagen {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-} */
 .layerNew {
   position: absolute;
   top: 0;
@@ -143,10 +226,20 @@
   margin-top: 20%;
   margin-bottom: 5%;
 }
-.newsSecond {
-  display: none;
-}
 /* ----------START-CSS-GRID-NEWS---------- */
+.linkNews h1 {
+  margin: 0%;
+}
+.linkNews {
+  /* text-decoration: none; */
+  color: #fff;
+  font-size: 1.5em;
+  margin: 0%;
+}
+.linkNews:hover{
+  /* text-decoration: none; */
+  color: rgb(87, 78, 78);
+}
 /* ----------END-NEWS---------- */
 
 /* ----------START-ABOUT---------- */
