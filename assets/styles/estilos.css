@@ -479,7 +479,8 @@ svg {
     right: 10px;
   }
   .titleContactSchool h2 {
-    font-size:1em
+    font-size:1em;
+    color: #fff;
 }
 .platforms{
   flex-direction: column;
