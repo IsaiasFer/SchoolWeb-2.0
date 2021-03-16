@@ -17,7 +17,7 @@
 }
 .subtitle{
     font-size:2.7em;
-    margin: auto 5%;
+    margin: 1% 5%;
 }
 .subtitle-2{
     font-size:2.7em;
@@ -51,6 +51,10 @@
     /* padding:1em 3em; */
     margin: 1em 3em;
 }
+.imgContainer-2{
+    margin: 1em 3em;
+    width: 620px;
+}
 .imgContainer img{
     background: unset;
     width: 100%;
@@ -61,6 +65,13 @@
     display: flex;
     flex-wrap: wrap;
 }
+.contentContainer{
+    display: flex;
+    justify-content: center;
+}
+/* .youtubeVideo {
+    margin: auto 25%;
+} */
 @media screen and (max-width:1024px){
     .newContainer{
         padding-left: 4.5em;

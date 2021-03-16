@@ -331,7 +331,7 @@
   margin: 0;
 }
 /* RESPONSIVE-START */
-@media screen and (max-width:1024px){
+/* @media screen and (max-width:1024px){
   .abouTextContainer h2{
     margin: 0px 10% 0.7em;
   }
@@ -367,6 +367,6 @@
 .abouTextContainer h2 {
   font-size: 1.4em;
 }
-}
+} */
 
 /* RESPONSIVE END*/
