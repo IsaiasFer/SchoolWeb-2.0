@@ -83,6 +83,9 @@ h4 {
     margin:0 0 .5em;
     text-align: center;
   }
+  .authorities:last-child{
+    padding-bottom: 2em;
+  }
 }
 @media screen and (max-width:375px){
   .pageTitle{
