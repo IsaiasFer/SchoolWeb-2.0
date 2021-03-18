@@ -4,7 +4,7 @@
 }
 .newContainer{
     background: linear-gradient(135deg, rgba(50,151,203,1) 0%, rgba(49,49,100,1) 100%);
-    padding: 1em 1em 1em 6.5em;
+    padding: 1em 6.5em 1em 6.5em;
 }
 .title,.date,.content,.autor{
     margin:0;
@@ -13,7 +13,18 @@
     color:rgb(255 255 255 / 76%)
 }
 .title{
-    font-size:3.8em
+    font-size:3.8em;
+}
+.subtitle{
+    font-size:2.7em;
+    margin: 1% 5%;
+}
+.subtitle-2{
+    font-size:2.7em;
+    margin: 10% 0% 2.5% 5%;
+}
+.newContainer h2{
+    color: gold;
 }
 .content{
     font-size:1.5em;
@@ -36,9 +47,13 @@
     height: 1.5em;
 }
 .imgContainer{
-    width:100%;
-    height: 500px;
-    padding:1em 0;
+    width: 470px;
+    /* padding:1em 3em; */
+    margin: 1em 3em;
+}
+.imgContainer-2{
+    margin: 1em 3em;
+    width: 620px;
 }
 .imgContainer img{
     background: unset;
@@ -46,6 +61,17 @@
     height: 100%;
     object-fit: contain;
 }
+.imagesNew{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contentContainer{
+    display: flex;
+    justify-content: center;
+}
+/* .youtubeVideo {
+    margin: auto 25%;
+} */
 @media screen and (max-width:1024px){
     .newContainer{
         padding-left: 4.5em;
@@ -97,4 +123,4 @@
             height: 400px;
             padding:0;
         }
-}
+} 
