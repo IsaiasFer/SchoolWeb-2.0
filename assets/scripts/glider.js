@@ -20,7 +20,7 @@
 			  }
 			},{
 			  // screens greater than >= 1024px
-			  breakpoint: 800,
+			  breakpoint: 1124,
 			  settings: {
 				slidesToShow: 3,
 				slidesToScroll: 3 
