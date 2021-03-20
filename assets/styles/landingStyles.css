@@ -6,6 +6,7 @@
 .titleNews h1{
   font-size: 3em;
   margin: 0 0 0 2%;
+  color: gold;
 }
 
 .navContainer {
@@ -62,15 +63,12 @@
 /* ----------START-CSS-GRID-NEWS---------- */
 .containerNewsCoursel {
   padding: 0 3%;
-  /* height: 90vh; */
 }
 .carouselList {
   display: flex;
   justify-items: center;
-  /* height: 90vh; */
 }
 .titleNew {
-  /* padding: auto; */
   padding: 0 6%;
 }
 .titleNew1 h1, .titleNew2 h1{
@@ -247,6 +245,13 @@
   .abouTextContainer h2{
     margin: 0px 5% 0.7em;
   }
+  .newImageContainer {
+    width: 340px;
+    height: 170px;
+    cursor: pointer;
+    position: relative;
+    margin: auto;
+  }
 }
 @media screen and (max-width:695px){
   .abouTextContainer h2{
@@ -271,36 +276,25 @@
 .abouTextContainer h2 {
   font-size: 1.4esm;
 }
-/* .newsContainer-1 {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 14% 35% 1fr ;
-  grid-template-areas: "titleNew-1 titleNew-2 titleNew-3"
-  "new1 new2 new3"
-  ". . ."
-  "titleNew-4 titleNew-5 titleNew-6"
-  "new4 new5 new6" ;
-  justify-items: center;
-  grid-column-gap: 6%;
-  margin: auto 9%;
-  height: 80vh;
+.titleNews h1{
+  font-size: 2.5em;
 }
-.newsContainer-2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 12% 35% 1fr 12% 35%;
-  grid-template-areas: "titleNew-7 titleNew-8 titleNew-9"
-  "new7 new8 new9"
-  ". . ."
-  "titleNew-10 titleNew-11 titleNew-12"
-  "new10 new11 new12" ;
-  justify-items: center;
-  grid-column-gap: 6%;
-  margin: auto 9%;
-  height: 80vh;
-  margin: calc(58px + 2%) 9% 0 9%;
-} */
 
 }
 
+@media screen and (max-width:320px){
+  .abouTextContainer h1 {
+    font-size: 45px;
+}
+.abouTextContainer h2 {
+  font-size: 1.4esm;
+}
+.newImageContainer {
+  width: 280px;
+  height: 160px;
+  cursor: pointer;
+  position: relative;
+  margin: auto;
+}
+}
 /* RESPONSIVE END*/
