@@ -1,7 +1,9 @@
-window.addEventListener('load', function(){
+// window.addEventListener('load', function(){
 	new Glider(document.querySelector('.carouselList'), {
 		slidesToShow: 1,
 		slidesToScroll: 1,
+		scrollLock: true,
+		scrollLockDelay: 50,
 		dots: '.carouselIndicate',
 		arrows: {
 			prev: '.carousel__anterior',
@@ -26,4 +28,4 @@ window.addEventListener('load', function(){
 			}
 		]
 	});
-});
+// });

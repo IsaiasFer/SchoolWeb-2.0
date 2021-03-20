@@ -27,7 +27,7 @@
     color: gold;
 }
 .content{
-    font-size:1.5em;
+    font-size:1.8em;
     line-height: 1.5;
 }
 .autorContainer{
@@ -48,7 +48,6 @@
 }
 .imgContainer{
     width: 470px;
-    /* padding:1em 3em; */
     margin: 1em 3em;
 }
 .imgContainer-2{
@@ -90,65 +89,116 @@
 }
 .linksContainer {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: 600;
 }
 /* .linkNews {
     font-size: 2em;
     font-weight: 600;
 } */
-/* .youtubeVideo {
-    margin: auto 25%;
-} */
-@media screen and (max-width:1024px){
-    .newContainer{
-        padding-left: 4.5em;
-    }
+.youtubeVideo {
+    width: 854px; 
+    height: 480px;
 }
-@media screen and (max-width:768px){
-    .newContainer{
-        padding-left: 3.5em;
+@media screen and (max-width:1024px){
+    /* .newContainer{
+        padding-left: 4.5em;
+    } */
+    .title{
+        font-size:2.4em
     }
-    
+    .content{
+    font-size: 1.8em;
+    }
+    .linksContainer {
+        font-size: 1.8em
+    }
+    .newContainer {
+        padding: 2.2em;
+    }    
+    .subtitle{
+        font-size: 2em;
+    }
 }
 @media screen and (max-width:767px){
     .navContainer{
         position:unset;
     }
+    .newContainer {
+        padding: 2em;
+    }
+    .content{
+        font-size: 1.5em;
+    }
+    .linksContainer {
+        font-size: 1.5em;
+    }
+    .subtitle{
+        font-size: 2em;
+    }
+    .subtitle-2{
+        font-size: 2em;
+    }
+    .imgContainer-2{
+        margin: 0;
+        width: 620px;
+        margin: 1em 0;
+    }
+    .imgContainer{
+        margin: 0;
+        width: 470px;
+        margin: 1em 0;
+    }
+    
 }
+
 @media screen and (max-width:620px){
     .newContainer{
-        padding-left: 2.5em;
+        padding: 1.5em;
     }
     .title{
         font-size:2em
     }
     .content{
-        font-size: 1.1em;
+        font-size: 1.3em;
+        /* margin: 0 1em; */
+    }
+    .linksContainer {
+        font-size: 1.3em;
     }
     .date,.autor{
         font-size:0.9em
     }
-}
-@media screen and (max-width:620px){
-    .newContainer{
-        padding-left: 1.5em;
+    .subtitle{
+        font-size: 2em;
+    }
+    .subtitle-2{
+        font-size: 2em;
     }
 }
-@media screen and (max-width:620px){
-    .newContainer{
-        padding-left: 1em;
-    }
-    .title{
-        font-size:2em
-    }
-    .content{
-        font-size: 1em;
-    }
-}
-    @media screen and (max-width:425px){
-        .imgContainer{
-            height: 400px;
-            padding:0;
+@media screen and (max-width:425px){
+    .newContainer {
+        padding: 1em 1em;
         }
-} 
+        .imgContainer{
+            padding:0;
+            margin: 1em 0;
+        }
+        .content{
+            font-size: 1.1em;
+            /* margin: 0 1em; */
+        }
+        .linksContainer {
+            font-size: 1.1em;
+        }
+        .subtitle{
+            font-size: 2em;
+        }
+        .subtitle-2{
+            font-size: 2em;
+        }
+        .youtubeVideo {
+            width: 393px; 
+            height: 220px;
+        }
+    } 

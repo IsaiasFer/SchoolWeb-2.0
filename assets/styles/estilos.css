@@ -553,7 +553,7 @@ header h1{
 }
 @media screen and (max-width:360px){
   header h1{
-    font-size: .8em;
+    font-size: 0.8em;
   }
 }
 @media screen and (max-width:345px){
