@@ -44,12 +44,12 @@
   height: 30px;
   z-index: 1;
   position: absolute;
-  right: 3%;
+  right: 1.5%;
   top: 50%;
   opacity: 40%;
 }
 .carousel__anterior {
-  left: 3%;
+  left: 1.5%;
   top: 50%;
 }
 .carousel__anterior:hover,
@@ -235,6 +235,7 @@
     margin: 0px 10% 0.7em;
   }
 }
+
 @media screen and (max-width:768px){
   .about{
     height: 90vh;
@@ -243,11 +244,25 @@
     margin: 0px 5% 0.7em;
   }
   .newImageContainer {
-    width: 340px;
-    height: 170px;
+    width: 320px;
+    height: 150px;
     cursor: pointer;
     position: relative;
     margin: auto;
+  }
+  .carousel__anterior {
+    left: 1%;
+    top: 50%;
+  }
+  .carousel__siguiente {
+    right: 1%;
+    top: 50%;
+  }
+}
+
+@media screen and (max-width:767px){
+  .carousel__siguiente , .carousel__anterior{
+    display: none;
   }
 }
 @media screen and (max-width:695px){
@@ -293,5 +308,6 @@
   position: relative;
   margin: auto;
 }
+
 }
 /* RESPONSIVE END*/
