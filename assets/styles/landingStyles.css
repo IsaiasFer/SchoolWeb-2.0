@@ -5,7 +5,8 @@
 }
 .titleNews h1{
   font-size: 3em;
-  margin: 2% 9% 0%;
+  margin: 0 0 0 2%;
+  color: gold;
 }
 
 .navContainer {
@@ -17,11 +18,7 @@
 .list ul {
   margin: 30px 0;
 }
-.newImagen{
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
+
 
 /* ----------END-HERO------------ */
 
@@ -35,20 +32,6 @@
 }
 .containerNewsCoursel {
   position: relative;
-}
-.newsFirst {
-  /* display: block; */
-  margin: 0;
-  /* width: 50%; */
-}
-.newsSecond {
-  /* display: block; */
-  margin: 0;
-  /* width: 50%; */
-}
-.titleNews h1 {
-  font-size: 3em;
-  margin: 2% 9% 0%;
 }
 .carousel__siguiente , .carousel__anterior{
   border: none;
@@ -78,128 +61,44 @@
 }
 
 /* ----------START-CSS-GRID-NEWS---------- */
-.newsContainer-1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 14% 35% 1fr 14% 35%;
-  /* grid-template-rows: 50% 50%; */
-  /* grid-template-rows: 6% 17.5% 1fr 6% 17.5%; */
-  grid-template-areas: "titleNew-1 titleNew-2 titleNew-3"
-  "new1 new2 new3"
-  ". . ."
-  "titleNew-4 titleNew-5 titleNew-6"
-  "new4 new5 new6" ;
-  justify-items: center;
-  grid-column-gap: 6%;
-  margin: auto 9%;
-  height: 80vh;
+.containerNewsCoursel {
+  padding: 0 3%;
 }
-.newsContainer-2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 12% 35% 1fr 12% 35%;
-  grid-template-areas: "titleNew-7 titleNew-8 titleNew-9"
-  "new7 new8 new9"
-  ". . ."
-  "titleNew-10 titleNew-11 titleNew-12"
-  "new10 new11 new12" ;
+.carouselList {
+  display: flex;
   justify-items: center;
-  grid-column-gap: 6%;
-  margin: auto 9%;
-  height: 80vh;
-  margin: calc(58px + 2%) 9% 0 9%;
 }
-/* .olds {
-  height: 90vh;
-} */
+.titleNew {
+  padding: 0 6%;
+}
+.titleNew1 h1, .titleNew2 h1{
+  font-size: 1.2em;
+}
 .newsContainer h1{
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin: 0;
 }
+.titleNews h1 {
+  font-size: 3em;
+}
+.titleNew h1 {
+  height: 72px;
+  text-align: center;
+}
 .new {
-  width: 100%;
-  height: 100%;
-}
-.titleNew-1 {
-  grid-area: titleNew-1;
-}
-.titleNew-2 {
-  grid-area: titleNew-2;
-}
-.titleNew-3 {
-  grid-area: titleNew-3;
-}
-.titleNew-4 {
-  grid-area: titleNew-4;
-}
-.titleNew-5 {
-  grid-area: titleNew-5;
-}
-.titleNew-6 {
-  grid-area: titleNew-6;
-}
-
-.titleNew-7 {
-  grid-area: titleNew-7;
-}
-.titleNew-8 {
-  grid-area: titleNew-8;
-}
-.titleNew-9 {
-  grid-area: titleNew-9;
-}
-.titleNew-10 {
-  grid-area: titleNew-10;
-}
-.titleNew-11 {
-  grid-area: titleNew-11
-}
-.titleNew-12 {
-  grid-area: titleNew-12
-}  
-.new1{
-  grid-area: new1;
-}
-.new2{
-  grid-area: new2;
-}
-.new3{
-  grid-area: new3;
-}
-.new4{
-  grid-area: new4;
-}
-.new5{
-  grid-area: new5;
-}
-.new6{
-  grid-area: new6;
-}
-
-.new7{
-  grid-area: new7;
-}
-.new8{
-  grid-area: new8;
-}
-.new9{
-  grid-area: new9;
-}
-.new10{
-  grid-area: new10;
-}
-.new11{
-  grid-area: new11;
-}
-.new12{
-  grid-area: new12;
+  margin: 4% auto; 
 }
 .newImageContainer {
-  width: 100%;
-  /* height: 65%; */
-  height: 100%;
+  width: 370px;
+  height: 180px;
   cursor: pointer;
   position: relative;
+  margin: auto;
+}
+.newImagen{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 .layerNew {
   position: absolute;
@@ -346,6 +245,13 @@
   .abouTextContainer h2{
     margin: 0px 5% 0.7em;
   }
+  .newImageContainer {
+    width: 340px;
+    height: 170px;
+    cursor: pointer;
+    position: relative;
+    margin: auto;
+  }
 }
 @media screen and (max-width:695px){
   .abouTextContainer h2{
@@ -368,8 +274,27 @@
     font-size: 45px;
 }
 .abouTextContainer h2 {
-  font-size: 1.4em;
+  font-size: 1.4esm;
 }
+.titleNews h1{
+  font-size: 2.5em;
 }
 
+}
+
+@media screen and (max-width:320px){
+  .abouTextContainer h1 {
+    font-size: 45px;
+}
+.abouTextContainer h2 {
+  font-size: 1.4esm;
+}
+.newImageContainer {
+  width: 280px;
+  height: 160px;
+  cursor: pointer;
+  position: relative;
+  margin: auto;
+}
+}
 /* RESPONSIVE END*/
