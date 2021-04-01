@@ -21,6 +21,9 @@
 
 
 /* ----------END-HERO------------ */
+.glider-dot.active{
+  background: #cc3233;
+}
 
 /* ----------START-NEWS----------*/
 .sectionNews {
