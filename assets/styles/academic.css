@@ -69,21 +69,18 @@
 .titleContent {
   width: 100%;
   height: 100%;
-  /* background: crimson; */
   display: none;
   /* display: flex; */
 }
 .studyPlanContent {
   width: 100%;
   height: 100%;
-  /* background: crimson; */
   display: none;
 }
 /* -- ----------START-STUDY-PROGRAM-CONTENT------------ -- */
 .studyProgramContent {
   width: 100%;
   height: 100%;
-  /* background: burlywood; */
   display: none;
 }
 .studyProgramContent h1 {
@@ -168,6 +165,23 @@ button:hover {
 button:active {
   background: #16162D;
 }
-
-
+.ELPEPE:target {
+  _blank
+}
 /* -- ----------END-ACADEMIC-CSS------------ -- */
+
+/* ----------------------------START-ACADEMIC-RESPONSIVE--------------------- */
+@media screen and (max-width:768px) {
+  .academic {
+    grid-template-columns: 30% 68% 1fr;
+  }
+
+  .academic button {
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (max-width:425px) {
+  /* .academic  */
+}
+/* ----------------------------END-ACADEMIC-RESPONSIVE--------------------- */
