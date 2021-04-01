@@ -71,12 +71,9 @@
 .titleNew {
   padding: 0 6%;
 }
-.titleNew1 h1, .titleNew2 h1{
+.titleNew a h1{
   font-size: 1.2em;
-}
-.newsContainer h1{
-  font-size: 1.2em;
-  margin: 0;
+  transition: .3s;
 }
 .titleNews h1 {
   font-size: 3em;
@@ -128,16 +125,19 @@
 /* ----------START-CSS-GRID-NEWS---------- */
 .linkNews h1 {
   margin: 0%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 .linkNews {
-  /* text-decoration: none; */
+  text-decoration: none;
   color: #fff;
   font-size: 1.5em;
   margin: 0%;
 }
 .linkNews:hover{
   /* text-decoration: none; */
-  color: rgb(87, 78, 78);
+  color:#7b1e1e;
 }
 /* ----------END-NEWS---------- */
 
@@ -283,6 +283,20 @@
 @media screen and (max-width:545px){
   .abouTextContainer h2{
     margin: 0 0 1em;
+  }
+}
+
+@media screen and (max-width:700px){
+  .titleNew a h1{
+    font-size: 1em;
+  }
+}
+@media screen and (max-width:425px){
+  .titleNews h1{
+    width:100%;
+    text-align: center;
+    margin:0;
+    font-size: 2.5em;
   }
 }
 @media screen and (max-width:375px){
