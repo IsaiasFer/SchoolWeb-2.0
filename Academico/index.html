@@ -71,19 +71,36 @@
     <!-- ----------END-NAV---------- -->
 
     <!-- ----------START-ACADEMIC------------ -->
-    <section class="academic">
-      
-      <button type="button" id="openTitle" onclick="showContentButtons(0)" class="titleAcademic">Titulo</button>
+    <section class="academic" id="academic">
+      <div class="column1Container">
 
-      <button type="button" id="openStudyPlan" onclick="showContentButtons(1)" class="studyPlan">Plan de estudio</button>
+            <div class="buttonsScreensMinWidth425">
 
-      <button type="button" id="openStudyProgram" onclick="showContentButtons(2)" class="studyProgram"> Programa de estudio</button>
+                  <a id="openTitle" onclick="showContentButtons(0)" class="titleAcademic">Titulo</a>
+                
+                  <a id="openStudyPlan" onclick="showContentButtons(1)" class="studyPlan">Plan de estudio</a>
+                
+                  <a id="openStudyProgram" onclick="showContentButtons(2)" class="studyProgram"> Programa de estudio</a>
+                
+                  <a id="openTeachersInfo" onclick="showContentButtons(3)" class="infoTeachers">Info profesores</a>
+            </div> 
 
-      <button type="button" id="openTeachersInfo" onclick="showContentButtons(3)" class="infoTeachers">Info profesores</button>
-      
+            <div class="buttonsScreensMaxWidth425">
+
+            <a id="openTitle" class="titleAcademic max-width-425px" target="_blank" href="../assets/images/academic/BOLETIN OFICIAL SALTA - DECRETO N° 561_11.pdf">Titulo</a>
+            
+            <a id="openStudyPlan" class="studyPlan max-width-425px" target="_blank" href="../assets/images/academic/curriculatecnica.pdf">Plan de estudio</a>
+
+            <a id="openStudyProgram" onclick="showContentButtons(2)" class="studyProgram"> Programa de estudio</a>
+                
+            <a id="openTeachersInfo" onclick="showContentButtons(3)" class="infoTeachers">Info profesores</a>
+            </div>
+          
+      </div>  
+
       <div class="column2Container" >
         
-        <iframe class="titleContent" id="titleContent" src="../assets/images/academic/BOLETIN OFICIAL SALTA - DECRETO N° 561_11.pdf" ></iframe>
+        <iframe class="titleContent" id="titleContent" src="../assets/images/academic/BOLETIN OFICIAL SALTA - DECRETO N° 561_11.pdf"></iframe>
 
         <iframe class="studyPlanContent" id="studyPlanContent" src="../assets/images/academic/curriculatecnica.pdf"></iframe>
         
@@ -107,7 +124,7 @@
           <div class="firstYearContentCB" id="firstYearContentCB">
             <h1>Primer Año Ciclo Basico </h1>
 
-            <p>Descargar: <a href="http://eet3141.ddns.net/Web3141/Archivos/1CB/Dibujo%20Tecnico%20I.pdf" class="ELPEPE">Dibujo Tecnico I.pdf</a></p>
+            <p>Descargar: <a href="http://eet3141.ddns.net/Web3141/Archivos/1CB/Dibujo%20Tecnico%20I.pdf" target="blank">Dibujo Tecnico I.pdf</a></p>
          
             <p>Descargar: <a href="http://eet3141.ddns.net/Web3141/Archivos/1CB/Matematicas%20I.pdf" target="blank">Matematica I.pdf</a></p>
           </div>

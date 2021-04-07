@@ -41,6 +41,8 @@ let infoTeachersContent2 = document.getElementById('infoTeachersContent2')
 
 // --------BUTTONS-CONTENT-INFO-TEACHERS----------
 
+let academic = document.getElementById("academic")
+
 
 // --------FUNTION-CONTENTS----------
 
