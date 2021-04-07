@@ -1,14 +1,14 @@
 // --------BUTTONS-CONTENTS----------
-// let openTitle = document.getElementById('openTitle')
+let openTitle = document.getElementById('openTitle')
 let titleContent = document.getElementById('titleContent')
 
-// let openStudyPlan = document.getElementById('openStudyPlan')
+let openStudyPlan = document.getElementById('openStudyPlan')
 let studyPlanContent = document.getElementById('studyPlanContent')
 
-// let openStudyProgram = document.getElementById('openStudyProgram')
+let openStudyProgram = document.getElementById('openStudyProgram')
 let studyProgramContent = document.getElementById('studyProgramContent')
 
-// let openTeachersInfo = document.getElementById('openTeachersInfo')
+let openTeachersInfo = document.getElementById('openTeachersInfo')
 let infoTeachersContent = document.getElementById('infoTeachersContent')
 // --------BUTTONS-CONTENTS----------
 
@@ -41,7 +41,11 @@ let infoTeachersContent2 = document.getElementById('infoTeachersContent2')
 
 // --------BUTTONS-CONTENT-INFO-TEACHERS----------
 
-let academic = document.getElementById("academic")
+let academic = document.getElementById('academic')
+
+let column1Container = document.getElementById('column1Container')
+
+let column2Container = document.getElementById('column2Container')
 
 
 // --------FUNTION-CONTENTS----------
@@ -65,7 +69,7 @@ function showContentStudyProgram(positionArray){
    for (let i = 0; i < programContent.length; i++) {
        programContent[i].style.display='none';
    }
-   programContent[positionArray].style.display='inline-block'
+   programContent[positionArray].style.display='inline-block';
 } 
 // --------FUNTION-CONTENT-STUDY-PROGRAM----------
 
@@ -82,5 +86,38 @@ function showContentInfoTeachers(options){
 
 // --------FUNTION-CONTENT-INFO-TEACHERS----------
 
+// --------RESPONSIVE-MAX-WIDTH-425PX----------
+    if (screen.width < 425){
+        openTitle.target = 'blank';
+        openTitle.href = 'file:///F:/Respaldo/Emi%20Proyects/Colaboracion%20School%20Web/SchoolWeb-2.0/assets/images/academic/BOLETIN%20OFICIAL%20SALTA%20-%20DECRETO%20N%C2%B0%20561_11.pdf';
+        openTitle.onclick = '';
+        openTitle.style.textDecoration = "none"
+
+        openStudyPlan.target = 'blank';
+        openStudyPlan.href = 'file:///F:/Respaldo/Emi%20Proyects/Colaboracion%20School%20Web/SchoolWeb-2.0/assets/images/academic/curriculatecnica.pdf';
+        openStudyPlan.onclick = '';
+        openStudyPlan.style.textDecoration = "none"
+
+
+        openStudyProgram.onclick = ''
+
+        openTeachersInfo.onclick = ''
+    } 
+    
+    if (screen.width < 425){
+        openStudyProgram.addEventListener('click', function openStudyProgramContent425px(){
+            column2Container.className = 'column1Container'
+            studyProgramContent.style.display = 'grid'
+            openTeachersInfo.style.display = 'none'
+        })
+
+        openTeachersInfo.addEventListener('click', function openTeachersInfoContent425px(){
+            column2Container.className = 'column1Container'
+            infoTeachersContent.style.display = 'grid'
+        })
+    }
+
+    
+// --------RESPONSIVE-MAX-WIDTH-425PX----------
 
 

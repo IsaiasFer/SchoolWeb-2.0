@@ -57,7 +57,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "buttonsScreensMinWidth425";
+  grid-template-areas: "buttonsContainer";
   height: 90vh;
   width: 100%;
   background: linear-gradient(
@@ -72,7 +72,7 @@
   font-weight: 400;
   font-size: 1.4em
 }
-.buttonsScreensMinWidth425 {
+.buttonsContainer {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 20% 1fr 20% 1fr 20% 1fr 20% 15%;
@@ -286,10 +286,7 @@ button:active {
     align-items: center;
     color: white;
   }
-  .buttonsScreensMinWidth425 {
-    display: none;
-  }
-  .buttonsScreensMaxWidth425 {
+  .buttonsContainer {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 20% 1fr 20% 1fr 20% 1fr 20% 15%;
@@ -307,16 +304,51 @@ button:active {
     justify-items: center;
     align-items: center;
   }
-  /* .titleAcademic .max-width-425px {
-    width: 60%;
-    height: 60%;
-    grid-area: titleAcademic;
-    border-radius: 100px;
-    background: #314D81;    
+  .academic button {
+    font-size: 1em;
   }
-  .titleAcademic {
-    display: none;
+  .studyProgramContent {
+    font-family: Barlow Condensed;
+    overflow-y: scroll;
+  }
+  .studyProgramContent p a {
+    outline: none;
+    border: none;
+    color: revert;
+    font-family: Barlow Condensed;
+    font-weight: 500;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  /* .studyProgramContent p {
+    font-size: 30px;
   } */
-
+  .infoTeachersContent {
+    font-family: Barlow Condensed;
+    overflow-y: scroll;
+    font-size: 30px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+  }
+  .infoTeachersContent a {
+    color: revert;
+    font-size: 30px;
+  }
+  .infoTeachersContent h1 {
+    font-size: 30px;
+    margin: 0;
+}
+  .infoTeachersContent p {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width:321px) {
+  .academic button {
+    font-size: .85em;
+  }
+  .column1Container a {
+    font-size: .9em;
+  }
 }
 /* ----------------------------END-ACADEMIC-RESPONSIVE--------------------- */
