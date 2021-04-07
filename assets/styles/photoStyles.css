@@ -1,3 +1,10 @@
+.content{
+  background: linear-gradient(
+    135deg,
+    rgba(50, 151, 203, 1) 0%,
+    rgba(49, 49, 100, 1) 100%
+    );
+}
 .photos {
   column-count: 4;
   column-gap: 10px;
@@ -21,7 +28,8 @@
 .pageTitle {
   color: #16162d;
   font-size: 48px;
-  margin: .5em 0 .5em 2em;
+  padding: .5em 0 .5em 2em;
+  margin:0;
 }
 @media screen and (max-width:1024px){
   .photos{
@@ -29,7 +37,7 @@
   }
   .pageTitle{
     font-size: 40px;
-    margin: .5em 0 .5em 1em;
+    padding: .5em 0 .5em 1em;
   }
 }
 @media screen and (max-width:768px){
@@ -37,7 +45,7 @@
     padding:0 20px 20px;
   }
   .pageTitle{
-    margin: .5em 0 .5em .5em;
+    padding: .5em 0 .5em .5em;
   }
 }
 @media screen and (max-width:767px){
