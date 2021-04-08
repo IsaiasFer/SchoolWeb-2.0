@@ -89,12 +89,12 @@ function showContentInfoTeachers(options){
 // --------RESPONSIVE-MAX-WIDTH-425PX----------
     if (screen.width < 425){
         openTitle.target = 'blank';
-        openTitle.href = 'file:///F:/Respaldo/Emi%20Proyects/Colaboracion%20School%20Web/SchoolWeb-2.0/assets/images/academic/BOLETIN%20OFICIAL%20SALTA%20-%20DECRETO%20N%C2%B0%20561_11.pdf';
+        openTitle.href = '../assets/images/academic/BOLETIN OFICIAL SALTA - DECRETO N° 561_11.pdf';
         openTitle.onclick = '';
         openTitle.style.textDecoration = "none"
 
         openStudyPlan.target = 'blank';
-        openStudyPlan.href = 'file:///F:/Respaldo/Emi%20Proyects/Colaboracion%20School%20Web/SchoolWeb-2.0/assets/images/academic/curriculatecnica.pdf';
+        openStudyPlan.href = '../assets/images/academic/curriculatecnica.pdf';
         openStudyPlan.onclick = '';
         openStudyPlan.style.textDecoration = "none"
 
