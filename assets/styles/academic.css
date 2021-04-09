@@ -1,28 +1,4 @@
 /* -- ----------START-ACADEMIC-CSS------------ -- */
-/* .academic {
-  display: grid;
-  grid-template-columns: 30% 60% 1fr;
-  grid-template-rows: 1fr 20% 1fr 20% 1fr 20% 1fr 20% 15%;
-  grid-template-areas: ". column2Container ."
-                       "titleAcademic column2Container ."
-                       ". column2Container ."
-                       "studyPlan column2Container ."
-                       ". column2Container ."
-                       "studyProgram column2Container ."
-                       ". column2Container ."
-                       "infoTeachers column2Container ."
-                       ". column2Container .";
-  height: 90vh;
-  width: 100%;
-  background: linear-gradient(
-      135deg,
-      rgba(50, 151, 203, 1) 0%,
-      rgba(49, 49, 100, 1) 100%
-      );
-  justify-items: center;
-  align-items: center;
-  color: white;
-} */
 .academic {
   display: grid;
   grid-template-columns: 30% 60% 1fr;
@@ -38,6 +14,7 @@
   justify-items: center;
   align-items: center;
   color: white;
+  position: relative;
 }
 .academic h1 {
   display: inherit;
@@ -254,6 +231,9 @@ button:active {
   cursor: pointer;
   display: inline;
 }
+.backButtonDivices425px {
+  display: none;
+}
 .max-width-425px {
   display: none;
 }
@@ -341,6 +321,17 @@ button:active {
 }
   .infoTeachersContent p {
     font-size: 30px;
+  }
+  .backButtonDivices425px {
+    background: #3297CB;
+    z-index: 0;
+    border-radius: 100px;
+    width: 60px;
+    height: 50px;
+    position: absolute;
+    top: 40px;
+    right: 0;
+}
   }
 }
 @media screen and (max-width:321px) {

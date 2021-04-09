@@ -47,6 +47,7 @@ let column1Container = document.getElementById('column1Container')
 
 let column2Container = document.getElementById('column2Container')
 
+let backButtonDevices425px = document.getElementById('backButtonDivices425px')
 
 // --------FUNTION-CONTENTS----------
 
@@ -99,23 +100,85 @@ function showContentInfoTeachers(options){
         openStudyPlan.style.textDecoration = "none"
 
 
+        openTitle.onclick = ''
+
+        openStudyPlan.onclick = ''
+
         openStudyProgram.onclick = ''
 
         openTeachersInfo.onclick = ''
+
     } 
     
+    
+    // let academicButtonsDevicesLessThan425px = [openTitle, openStudyPlan, openStudyProgram, openTeachersInfo]
+    // let academicContentDevicesLessThan425px = [studyProgramContent, infoTeachersContent]
+
+    // if (screen.width < 425){
+        
+    //     openStudyProgram.addEventListener('click', openContent425px (0))
+    //     openTeachersInfo.addEventListener('click', openContent425px (1))
+
+    //     function openContent425px (optionContent){
+    //         for (let i = 0; i < academicButtonsDevicesLessThan425px.length; i++) {
+    //             academicButtonsDevicesLessThan425px[i].style.display = 'none'
+    //         }  
+    //         academicContentDevicesLessThan425px[optionContent].style.display = 'grid'
+    //         backButtonDevices425px.style.display = 'inline-block'
+    //         column2Container.className = 'column1Container'
+    //     }
+    // }   
+
+    // backButtonDevices425px.addEventListener('click', function comeBack (){
+    //     for (let i = 0; i < academicButtonsDevicesLessThan425px.length; i++){
+    //         academicButtonsDevicesLessThan425px[i].style.display = 'flex'
+    //     }
+    //     studyProgramContent.style.display = 'none'
+    //     infoTeachersContent.style.display = 'none'
+    //     column2Container.className = 'column2Container'
+    //     backButtonDevices425px.style.display = 'none'
+    // openStudyProgram.style.display = 'flex'
+    // openTeachersInfo.style.display = 'flex'
+    // openTitle.style.display = 'flex'
+    // openStudyPlan.style.display = 'flex'
+// })
+
+
+        let academicContentDevicesLessThan425px = [openTitle, openStudyPlan, openStudyProgram, openTeachersInfo]
+
+
     if (screen.width < 425){
         openStudyProgram.addEventListener('click', function openStudyProgramContent425px(){
+            for (let i = 0; i < academicContentDevicesLessThan425px.length; i++) {
+                academicContentDevicesLessThan425px[i].style.display = 'none'
+            }
             column2Container.className = 'column1Container'
             studyProgramContent.style.display = 'grid'
-            openTeachersInfo.style.display = 'none'
+            backButtonDevices425px.style.display = 'inline-block'
+
         })
 
         openTeachersInfo.addEventListener('click', function openTeachersInfoContent425px(){
+            for (let i = 0; i < academicContentDevicesLessThan425px.length; i++) {
+                academicContentDevicesLessThan425px[i].style.display = 'none'
+            }
             column2Container.className = 'column1Container'
             infoTeachersContent.style.display = 'grid'
+            backButtonDevices425px.style.display = 'inline-block'
         })
-    }
+    }   
+
+
+        backButtonDevices425px.addEventListener('click', function comeBack (){
+            for (let i = 0; i < academicContentDevicesLessThan425px.length; i++){
+                academicContentDevicesLessThan425px[i].style.display = 'flex'
+            }
+            studyProgramContent.style.display = 'none'
+            infoTeachersContent.style.display = 'none'
+            column2Container.className = 'column2Container'
+            backButtonDevices425px.style.display = 'none'
+    })
+    
 
     
 // --------RESPONSIVE-MAX-WIDTH-425PX----------
