@@ -99,15 +99,9 @@ function showContentInfoTeachers(options){
         openStudyPlan.onclick = '';
         openStudyPlan.style.textDecoration = "none"
 
-
-        openTitle.onclick = ''
-
-        openStudyPlan.onclick = ''
-
         openStudyProgram.onclick = ''
 
         openTeachersInfo.onclick = ''
-
     } 
     
     
@@ -116,16 +110,16 @@ function showContentInfoTeachers(options){
 
     // if (screen.width < 425){
         
-    //     openStudyProgram.addEventListener('click', openContent425px (0))
-    //     openTeachersInfo.addEventListener('click', openContent425px (1))
+        // openStudyProgram.addEventListener('click', openContent425px (0))
+        // openTeachersInfo.addEventListener('click', openContent425px (1))
 
-    //     function openContent425px (optionContent){
-    //         for (let i = 0; i < academicButtonsDevicesLessThan425px.length; i++) {
-    //             academicButtonsDevicesLessThan425px[i].style.display = 'none'
-    //         }  
-    //         academicContentDevicesLessThan425px[optionContent].style.display = 'grid'
-    //         backButtonDevices425px.style.display = 'inline-block'
-    //         column2Container.className = 'column1Container'
+        // function openContent425px (optionContent){
+            // for (let i = 0; i < academicButtonsDevicesLessThan425px.length; i++) {
+        //         academicButtonsDevicesLessThan425px[i].style.display = 'none'
+        //     }  
+        //     academicContentDevicesLessThan425px[optionContent].style.display = 'grid'
+        //     backButtonDevices425px.style.display = 'inline-block'
+        //     column2Container.className = 'column1Container'
     //     }
     // }   
 
