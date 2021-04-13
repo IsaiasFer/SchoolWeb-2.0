@@ -88,7 +88,7 @@ function showContentInfoTeachers(options){
 // --------FUNTION-CONTENT-INFO-TEACHERS----------
 
 // --------RESPONSIVE-MAX-WIDTH-425PX----------
-    if (screen.width < 425){
+    if (screen.width < 426){
         openTitle.target = 'blank';
         openTitle.href = '../assets/images/academic/BOLETIN OFICIAL SALTA - DECRETO N° 561_11.pdf';
         openTitle.onclick = '';
@@ -141,13 +141,13 @@ function showContentInfoTeachers(options){
         let academicContentDevicesLessThan425px = [openTitle, openStudyPlan, openStudyProgram, openTeachersInfo]
 
 
-    if (screen.width < 425){
+    if (screen.width < 426){
         openStudyProgram.addEventListener('click', function openStudyProgramContent425px(){
             for (let i = 0; i < academicContentDevicesLessThan425px.length; i++) {
                 academicContentDevicesLessThan425px[i].style.display = 'none'
             }
             column2Container.className = 'column1Container'
-            studyProgramContent.style.display = 'grid'
+            studyProgramContent.style.display = 'inline-block'
             backButtonDevices425px.style.display = 'inline-block'
 
         })
@@ -157,11 +157,9 @@ function showContentInfoTeachers(options){
                 academicContentDevicesLessThan425px[i].style.display = 'none'
             }
             column2Container.className = 'column1Container'
-            infoTeachersContent.style.display = 'grid'
+            infoTeachersContent.style.display = 'inline-block'
             backButtonDevices425px.style.display = 'inline-block'
         })
-    }   
-
 
         backButtonDevices425px.addEventListener('click', function comeBack (){
             for (let i = 0; i < academicContentDevicesLessThan425px.length; i++){
@@ -172,6 +170,9 @@ function showContentInfoTeachers(options){
             column2Container.className = 'column2Container'
             backButtonDevices425px.style.display = 'none'
     })
+    }   
+
+
     
 
     

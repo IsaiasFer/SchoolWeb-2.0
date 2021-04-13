@@ -20,6 +20,7 @@
   display: inherit;
   text-align: center;
   align-items: center;
+  color: gold;
 }
 .column1Container {
   grid-area: column1Container;
@@ -68,7 +69,7 @@
   align-items: center;
 }
 .titleAcademic{
-  width: 60%;
+  width: 70%;
   height: 60%;
   grid-area: titleAcademic;
   border-radius: 100px;
@@ -79,7 +80,7 @@
   justify-content: center;
 }
 .studyPlan{
-  width: 60%;
+  width: 70%;
   height: 60%;
   grid-area: studyPlan;
   border-radius: 100px;
@@ -90,7 +91,7 @@
   justify-content: center;
 }
 .studyProgram{
-  width: 60%;
+  width: 70%;
   height: 60%;
   grid-area: studyProgram;
   border-radius: 100px;
@@ -101,7 +102,7 @@
   justify-content: center;
 }
 .infoTeachers{
-  width: 60%;
+  width: 70%;
   height: 60%;
   grid-area: infoTeachers;
   border-radius: 100px;
@@ -129,12 +130,13 @@
   display: none;
 }
 .studyProgramContent h1 {
-  margin: 0;
   font-size: 1.8em;
+  margin: .5em;
 }
 .studyProgramContent p {
   font-size: 1.4em;
   font-weight: 600;
+  margin: 1em;
 }
 .optionsStudyProgramContent {
   height: 10%;
@@ -146,21 +148,27 @@
 }
 .firstYearContentCB {
   display: none;
+  /* margin: 0 3%; */
 }
 .secondYearContentCB {
   display: none;
+  /* margin: 0 3%; */
 }
 .firstYearContentCS {
   display: none;
+  /* margin: 0 3%; */
 }
 .secondYearContentCS {
   display: none;
+  /* margin: 0 3%; */
 }
 .thirdYearContentCS {
   display: none;
+  /* margin: 0 3%; */
 }
 .fourthYearContentCS {
   display: none;
+  /* margin: 0 3%; */
 }
 /* -- ----------END-STUDY-PROGRAM-CONTENT------------ -- */
 
@@ -171,17 +179,21 @@
 }
 .infoTeachersContent1 {
   display: none;
+  /* margin: 0 3%; */
 }
 .infoTeachersContent2 {
   display: none;
+  /* margin: 0 3%; */
 }
 .infoTeachersContent p {
   font-size: 1.4em;
   font-weight: 600;
+  margin: 1em;
 }
 .infoTeachersContent h1 {
   font-size: 1.8em;
   margin: 0;
+  margin: .5em;
 }
 .optionInfoTeachersContent {
   width: auto;
@@ -205,16 +217,6 @@ button:hover {
 button:active {
   background: #16162D;
 }
-
-/* .column1Container a {
-  display: flex;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  align-items: center;
-  justify-content: center;
-} */
-
 .academic a:hover {
   background: #3297CB;
 }
@@ -240,7 +242,15 @@ button:active {
 /* -- ----------END-ACADEMIC-CSS------------ -- */
 
 /* ----------------------------START-ACADEMIC-RESPONSIVE--------------------- */
+@media screen and (max-width:1024px) {
+  .column1Container {
+    font-size: 1.4em;
+  }
+}
 @media screen and (max-width:768px) {
+  .column1Container {
+    font-size: 1em;
+  }
   .academic {
     grid-template-columns: 30% 68% 1fr;
   }
@@ -283,9 +293,19 @@ button:active {
     width: 100%;
     justify-items: center;
     align-items: center;
+    font-size: 1.4em;
   }
-  .academic button {
-    font-size: 1em;
+  .titleAcademic{
+    width: 60%;
+  }
+  .studyPlan{
+    width: 60%;
+  }
+  .studyProgram{
+    width: 60%;
+  }
+  .infoTeachers{
+    width: 60%;
   }
   .studyProgramContent {
     font-family: Barlow Condensed;
@@ -296,50 +316,73 @@ button:active {
     border: none;
     color: revert;
     font-family: Barlow Condensed;
-    font-weight: 500;
-    font-size: 30px;
+    /* font-weight: 500; */
+    /* font-size: 30px; */
     cursor: pointer;
   }
-  /* .studyProgramContent p {
-    font-size: 30px;
-  } */
   .infoTeachersContent {
     font-family: Barlow Condensed;
     overflow-y: scroll;
-    font-size: 30px;
     cursor: pointer;
     outline: none;
     border: none;
   }
   .infoTeachersContent a {
     color: revert;
-    font-size: 30px;
   }
   .infoTeachersContent h1 {
-    font-size: 30px;
-    margin: 0;
+    margin: .5em;
 }
-  .infoTeachersContent p {
-    font-size: 30px;
-  }
   .backButtonDivices425px {
     background: #3297CB;
     z-index: 0;
     border-radius: 100px;
-    width: 60px;
+    width: 50px;
     height: 50px;
     position: absolute;
     top: 40px;
     right: 0;
-}
   }
 }
 @media screen and (max-width:321px) {
+  .column1Container {
+    font-size: 1.2em;
+  }
   .academic button {
     font-size: .85em;
   }
+  .academic h1 p {
+    margin: .5em;
+    font-size: 1.4em;
+
+  }
   .column1Container a {
     font-size: .9em;
+  }
+  .buttonsContainer {
+    font-size: 1.2em;
+  }
+  .optionsStudyProgramContent {
+    height: 5%;
+  }
+  .studyProgramContent {
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  .studyProgramContent h1 {
+    font-size: 1.4em;
+    margin: .5em;
+  }
+  .studyProgramContent p {
+    font-size: 1.2em;
+  }
+  .infoTeachersContent h1 {
+    font-size: 1.4em;
+    margin: .5em;
+  }
+  .infoTeachersContent p {
+    font-size: 1.2em;
   }
 }
 /* ----------------------------END-ACADEMIC-RESPONSIVE--------------------- */
